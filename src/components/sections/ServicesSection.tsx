@@ -1,96 +1,96 @@
-'use client';
+&apos;use client&apos;;
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code, Cloud, Database, Shield, Zap, Users, ArrowRight, CheckCircle } from 'lucide-react';
-import Card from '../ui/Card';
-import Button from '../ui/Button';
+import React from &apos;react&apos;;
+import { motion } from &apos;framer-motion&apos;;
+import { Code, Cloud, Database, Shield, Zap, Users, ArrowRight, CheckCircle } from &apos;lucide-react&apos;;
+import Card from &apos;../ui/Card&apos;;
+import Button from &apos;../ui/Button&apos;;
 
 const ServicesSection: React.FC = () => {
   const services = [
     {
       icon: Code,
-      title: 'Custom Software Development',
-      description: 'Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.',
+      title: &apos;Custom Software Development&apos;,
+      description: &apos;Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.&apos;,
       features: [
-        'Web & Mobile Applications',
-        'API Development & Integration',
-        'Legacy System Modernization',
-        'Scalable Architecture Design'
+        &apos;Web & Mobile Applications&apos;,
+        &apos;API Development & Integration&apos;,
+        &apos;Legacy System Modernization&apos;,
+        &apos;Scalable Architecture Design&apos;
       ],
-      color: 'from-blue-500 to-blue-600',
-      bgColor: 'bg-blue-50',
-      iconColor: 'text-blue-600'
+      color: &apos;from-blue-500 to-blue-600&apos;,
+      bgColor: &apos;bg-blue-50&apos;,
+      iconColor: &apos;text-blue-600&apos;
     },
     {
       icon: Cloud,
-      title: 'Cloud Architecture & Migration',
-      description: 'Expert cloud solutions that optimize performance, reduce costs, and ensure scalability for your business.',
+      title: &apos;Cloud Architecture & Migration&apos;,
+      description: &apos;Expert cloud solutions that optimize performance, reduce costs, and ensure scalability for your business.&apos;,
       features: [
-        'AWS, Azure & Google Cloud',
-        'Microservices Architecture',
-        'DevOps & CI/CD Pipelines',
-        'Cost Optimization Strategies'
+        &apos;AWS, Azure & Google Cloud&apos;,
+        &apos;Microservices Architecture&apos;,
+        &apos;DevOps & CI/CD Pipelines&apos;,
+        &apos;Cost Optimization Strategies&apos;
       ],
-      color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50',
-      iconColor: 'text-purple-600'
+      color: &apos;from-purple-500 to-purple-600&apos;,
+      bgColor: &apos;bg-purple-50&apos;,
+      iconColor: &apos;text-purple-600&apos;
     },
     {
       icon: Database,
-      title: 'Data Engineering & Analytics',
-      description: 'Transform your data into actionable insights with our advanced analytics and data engineering solutions.',
+      title: &apos;Data Engineering & Analytics&apos;,
+      description: &apos;Transform your data into actionable insights with our advanced analytics and data engineering solutions.&apos;,
       features: [
-        'Data Pipeline Development',
-        'Business Intelligence Dashboards',
-        'Machine Learning Integration',
-        'Real-time Analytics'
+        &apos;Data Pipeline Development&apos;,
+        &apos;Business Intelligence Dashboards&apos;,
+        &apos;Machine Learning Integration&apos;,
+        &apos;Real-time Analytics&apos;
       ],
-      color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-50',
-      iconColor: 'text-green-600'
+      color: &apos;from-green-500 to-green-600&apos;,
+      bgColor: &apos;bg-green-50&apos;,
+      iconColor: &apos;text-green-600&apos;
     },
     {
       icon: Shield,
-      title: 'Cybersecurity & Compliance',
-      description: 'Protect your digital assets with enterprise-grade security solutions and compliance frameworks.',
+      title: &apos;Cybersecurity & Compliance&apos;,
+      description: &apos;Protect your digital assets with enterprise-grade security solutions and compliance frameworks.&apos;,
       features: [
-        'Security Audits & Assessments',
-        'Compliance Implementation',
-        'Threat Detection & Response',
-        'Data Protection Strategies'
+        &apos;Security Audits & Assessments&apos;,
+        &apos;Compliance Implementation&apos;,
+        &apos;Threat Detection & Response&apos;,
+        &apos;Data Protection Strategies&apos;
       ],
-      color: 'from-red-500 to-red-600',
-      bgColor: 'bg-red-50',
-      iconColor: 'text-red-600'
+      color: &apos;from-red-500 to-red-600&apos;,
+      bgColor: &apos;bg-red-50&apos;,
+      iconColor: &apos;text-red-600&apos;
     },
     {
       icon: Zap,
-      title: 'Digital Transformation',
-      description: 'Accelerate your digital journey with strategic consulting and technology implementation.',
+      title: &apos;Digital Transformation&apos;,
+      description: &apos;Accelerate your digital journey with strategic consulting and technology implementation.&apos;,
       features: [
-        'Digital Strategy Consulting',
-        'Process Automation',
-        'Technology Roadmapping',
-        'Change Management'
+        &apos;Digital Strategy Consulting&apos;,
+        &apos;Process Automation&apos;,
+        &apos;Technology Roadmapping&apos;,
+        &apos;Change Management&apos;
       ],
-      color: 'from-yellow-500 to-yellow-600',
-      bgColor: 'bg-yellow-50',
-      iconColor: 'text-yellow-600'
+      color: &apos;from-yellow-500 to-yellow-600&apos;,
+      bgColor: &apos;bg-yellow-50&apos;,
+      iconColor: &apos;text-yellow-600&apos;
     },
     {
       icon: Users,
-      title: 'Technical Consulting',
-      description: 'Expert guidance on technology decisions, architecture reviews, and strategic planning.',
+      title: &apos;Technical Consulting&apos;,
+      description: &apos;Expert guidance on technology decisions, architecture reviews, and strategic planning.&apos;,
       features: [
-        'Technology Assessment',
-        'Architecture Reviews',
-        'Performance Optimization',
-        'Strategic Planning'
+        &apos;Technology Assessment&apos;,
+        &apos;Architecture Reviews&apos;,
+        &apos;Performance Optimization&apos;,
+        &apos;Strategic Planning&apos;
       ],
-      color: 'from-indigo-500 to-indigo-600',
-      bgColor: 'bg-indigo-50',
-      iconColor: 'text-indigo-600'
+      color: &apos;from-indigo-500 to-indigo-600&apos;,
+      bgColor: &apos;bg-indigo-50&apos;,
+      iconColor: &apos;text-indigo-600&apos;
     }
   ];
 
@@ -116,35 +116,35 @@ const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section id="services" className="section-padding bg-gray-50">
-      <div className="container-custom">
+    <section id=&quot;services&quot; className=&quot;section-padding bg-gray-50&quot;>
+      <div className=&quot;container-custom&quot;>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className=&quot;text-center mb-16&quot;
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6"
+            className=&quot;inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6&quot;
           >
-            <Zap className="w-4 h-4 mr-2" />
+            <Zap className=&quot;w-4 h-4 mr-2&quot; />
             Our Services
           </motion.div>
           
-          <h2 className="heading-2 text-gray-900 mb-6">
-            Comprehensive Solutions for{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className=&quot;heading-2 text-gray-900 mb-6&quot;>
+            Comprehensive Solutions for{&apos; &apos;}
+            <span className=&quot;bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent&quot;>
               Modern Businesses
             </span>
           </h2>
           
-          <p className="body-large text-gray-600 max-w-3xl mx-auto">
+          <p className=&quot;body-large text-gray-600 max-w-3xl mx-auto&quot;>
             From custom software development to cloud architecture, we provide end-to-end solutions 
             that drive innovation and accelerate your business growth.
           </p>
@@ -153,10 +153,10 @@ const ServicesSection: React.FC = () => {
         {/* Services Grid */}
         <motion.div
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
+          initial=&quot;hidden&quot;
+          whileInView=&quot;visible&quot;
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className=&quot;grid md:grid-cols-2 lg:grid-cols-3 gap-8&quot;
         >
           {services.map((service, index) => (
             <motion.div
@@ -165,22 +165,22 @@ const ServicesSection: React.FC = () => {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="h-full p-8 hover:shadow-2xl">
+              <Card className=&quot;h-full p-8 hover:shadow-2xl&quot;>
                 {/* Service Icon */}
                 <div className={`w-16 h-16 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6`}>
                   <service.icon className={`w-8 h-8 ${service.iconColor}`} />
                 </div>
 
                 {/* Service Title */}
-                <h3 className="heading-4 text-gray-900 mb-4">{service.title}</h3>
+                <h3 className=&quot;heading-4 text-gray-900 mb-4&quot;>{service.title}</h3>
 
                 {/* Service Description */}
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className=&quot;text-gray-600 mb-6 leading-relaxed&quot;>
                   {service.description}
                 </p>
 
                 {/* Service Features */}
-                <ul className="space-y-3 mb-8">
+                <ul className=&quot;space-y-3 mb-8&quot;>
                   {service.features.map((feature, featureIndex) => (
                     <motion.li
                       key={feature}
@@ -188,9 +188,9 @@ const ServicesSection: React.FC = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: featureIndex * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-center text-sm text-gray-600"
+                      className=&quot;flex items-center text-sm text-gray-600&quot;
                     >
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-3 flex-shrink-0" />
+                      <CheckCircle className=&quot;w-4 h-4 text-green-500 mr-3 flex-shrink-0&quot; />
                       {feature}
                     </motion.li>
                   ))}
@@ -198,11 +198,11 @@ const ServicesSection: React.FC = () => {
 
                 {/* CTA Button */}
                 <Button
-                  variant="outline"
-                  size="sm"
-                  icon={<ArrowRight className="w-4 h-4" />}
-                  iconPosition="right"
-                  className="w-full"
+                  variant=&quot;outline&quot;
+                  size=&quot;sm&quot;
+                  icon={<ArrowRight className=&quot;w-4 h-4&quot; />}
+                  iconPosition=&quot;right&quot;
+                  className=&quot;w-full&quot;
                 >
                   Learn More
                 </Button>
@@ -217,19 +217,19 @@ const ServicesSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className=&quot;text-center mt-16&quot;
         >
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="heading-3 mb-4">Ready to Transform Your Business?</h3>
-            <p className="body-large mb-8 opacity-90 max-w-2xl mx-auto">
-              Let's discuss how our expertise can help you achieve your digital transformation goals 
+          <div className=&quot;bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white&quot;>
+            <h3 className=&quot;heading-3 mb-4&quot;>Ready to Transform Your Business?</h3>
+            <p className=&quot;body-large mb-8 opacity-90 max-w-2xl mx-auto&quot;>
+              Let&apos;s discuss how our expertise can help you achieve your digital transformation goals 
               and drive measurable business outcomes.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+              <Button variant=&quot;accent&quot; size=&quot;lg&quot; icon={<ArrowRight className=&quot;w-5 h-5&quot; />} iconPosition=&quot;right&quot;>
                 Schedule Consultation
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white hover:text-blue-600">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; className=&quot;bg-white/10 border-white/20 text-white hover:bg-white hover:text-blue-600&quot;>
                 View Case Studies
               </Button>
             </div>
