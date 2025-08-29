@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, MessageSquare, ArrowRight, CheckCircle } from 'lucide-react';
+import { Mail, Clock, ArrowRight, CheckCircle } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 
@@ -32,26 +32,42 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: '',
-        budget: '',
-        timeline: ''
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            service: '',
+            message: '',
+            budget: '',
+            timeline: ''
+          });
+        }, 3000);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // You could add error state handling here
+      alert('Failed to send message. Please try again or contact us directly at info@kingsmenconsultancy.org');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactMethods = [
@@ -59,41 +75,11 @@ const ContactSection: React.FC = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Get in touch via email for detailed inquiries',
-      contact: 'hello@kingsmenconsultancy.com',
+      contact: 'info@kingsmenconsultancy.org',
       action: 'Send Email',
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
       iconColor: 'text-blue-600'
-    },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      description: 'Speak directly with our team',
-      contact: '+1 (555) 123-4567',
-      action: 'Call Now',
-      color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-50',
-      iconColor: 'text-green-600'
-    },
-    {
-      icon: MessageSquare,
-      title: 'Live Chat',
-      description: 'Chat with us in real-time',
-      contact: 'Available 24/7',
-      action: 'Start Chat',
-      color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50',
-      iconColor: 'text-purple-600'
-    },
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      description: 'Schedule an in-person meeting',
-      contact: 'San Francisco, CA',
-      action: 'Get Directions',
-      color: 'from-orange-500 to-orange-600',
-      bgColor: 'bg-orange-50',
-      iconColor: 'text-orange-600'
     }
   ];
 
@@ -140,7 +126,7 @@ const ContactSection: React.FC = () => {
             viewport={{ once: true }}
             className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6"
           >
-            <MessageSquare className="w-4 h-4 mr-2" />
+            <Mail className="w-4 h-4 mr-2" />
             Get In Touch
           </motion.div>
           
@@ -347,8 +333,8 @@ const ContactSection: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            {/* Contact Methods */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            {/* Contact Method */}
+            <div className="flex justify-center">
               {contactMethods.map((method, index) => (
                 <motion.div
                   key={method.title}
@@ -356,15 +342,21 @@ const ContactSection: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
+                  className="max-w-sm w-full"
                 >
-                  <Card className="p-6 text-center hover:shadow-xl transition-shadow">
-                    <div className={`w-12 h-12 ${method.bgColor} rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                      <method.icon className={`w-6 h-6 ${method.iconColor}`} />
+                  <Card className="p-8 text-center hover:shadow-xl transition-shadow">
+                    <div className={`w-16 h-16 ${method.bgColor} rounded-xl flex items-center justify-center mx-auto mb-6`}>
+                      <method.icon className={`w-8 h-8 ${method.iconColor}`} />
                     </div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{method.title}</h4>
-                    <p className="text-sm text-gray-600 mb-3">{method.description}</p>
-                    <p className="text-sm font-medium text-gray-900 mb-4">{method.contact}</p>
-                    <Button variant="outline" size="sm" className="w-full">
+                    <h4 className="text-xl font-semibold text-gray-900 mb-3">{method.title}</h4>
+                    <p className="text-gray-600 mb-4">{method.description}</p>
+                    <p className="text-lg font-medium text-gray-900 mb-6">{method.contact}</p>
+                    <Button 
+                      variant="outline" 
+                      size="md" 
+                      className="w-full"
+                      onClick={() => window.location.href = `mailto:${method.contact}`}
+                    >
                       {method.action}
                     </Button>
                   </Card>

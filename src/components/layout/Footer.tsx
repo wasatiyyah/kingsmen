@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github, ArrowUp } from 'lucide-react';
+import { Mail, Linkedin, Twitter, Github, ArrowUp } from 'lucide-react';
 import Button from '../ui/Button';
 
 const Footer: React.FC = () => {
@@ -83,15 +83,7 @@ const Footer: React.FC = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-400">
                   <Mail className="w-4 h-4 mr-3" />
-                  <span>hello@kingsmenconsultancy.com</span>
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <Phone className="w-4 h-4 mr-3" />
-                  <span>+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <MapPin className="w-4 h-4 mr-3" />
-                  <span>San Francisco, CA</span>
+                  <span>info@kingsmenconsultancy.org</span>
                 </div>
               </div>
 
