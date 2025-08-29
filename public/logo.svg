@@ -1,0 +1,14 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text { font-family: Arial, sans-serif; font-weight: bold; fill: #1f2937; }
+      .logo-subtext { font-family: Arial, sans-serif; font-weight: 300; fill: #1f2937; opacity: 0.8; }
+    </style>
+  </defs>
+  
+  <!-- Main Text -->
+  <text x="0" y="35" class="logo-text" font-size="28">KINGSMEN</text>
+  
+  <!-- Subtext -->
+  <text x="0" y="60" class="logo-subtext" font-size="16">CONSULTANCY</text>
+</svg>
