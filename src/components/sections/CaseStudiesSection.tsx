@@ -5,9 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ExternalLink, Star, TrendingUp, Users, Clock, CheckCircle } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const CaseStudiesSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const { openCalendly } = useCalendly();
 
   const categories = [
     { id: 'all', name: 'All Projects' },
@@ -372,10 +374,10 @@ const CaseStudiesSection: React.FC = () => {
               Let's discuss how we can help you achieve similar results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right">
+              <Button variant="accent" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right" onClick={openCalendly}>
                 Start Your Project
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white hover:text-gray-900">
+              <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white hover:text-gray-900" onClick={openCalendly}>
                 Schedule Consultation
               </Button>
             </div>

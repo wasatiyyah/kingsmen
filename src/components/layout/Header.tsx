@@ -6,11 +6,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
 import Button from '../ui/Button';
 import Logo from '../ui/Logo';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { openCalendly } = useCalendly();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +71,7 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <Logo size="md" showText={true} />
+            <Logo size="md" />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -101,7 +103,7 @@ const Header: React.FC = () => {
             </motion.button>
 
             {/* CTA Button */}
-            <Button variant="primary" size="sm">
+            <Button variant="primary" size="sm" onClick={openCalendly}>
               Get Started
             </Button>
           </div>
@@ -146,7 +148,7 @@ const Header: React.FC = () => {
                 ))}
                 <div className="pt-4 border-t border-gray-200">
                   <div className="flex items-center justify-between">
-                    <Button variant="primary" size="sm" className="w-full">
+                    <Button variant="primary" size="sm" className="w-full" onClick={openCalendly}>
                       Get Started
                     </Button>
                     <motion.button

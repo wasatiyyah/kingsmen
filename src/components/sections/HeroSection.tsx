@@ -4,8 +4,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Star, Users, Zap, Shield } from 'lucide-react';
 import Button from '../ui/Button';
+import { useCalendly } from '@/contexts/CalendlyContext';
 
 const HeroSection: React.FC = () => {
+  const { openCalendly } = useCalendly();
+  
   const stats = [
     { icon: Users, value: '85+', label: 'Happy Clients' },
     { icon: Zap, value: '120+', label: 'Projects Delivered' },
@@ -110,7 +113,7 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <Button variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right">
+              <Button variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right" onClick={openCalendly}>
                 Start Your Project
               </Button>
               <Button variant="outline" size="lg" icon={<Play className="w-5 h-5" />} iconPosition="left">
