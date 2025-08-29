@@ -1,0 +1,555 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: K
+        - generic [ref=e9]: Kingsmen
+        - generic [ref=e10]: Consultancy
+      - navigation [ref=e11]:
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e13] [cursor=pointer]: Home
+        - link "Services" [ref=e14] [cursor=pointer]:
+          - /url: /services
+          - generic [ref=e15] [cursor=pointer]: Services
+        - link "Solutions" [ref=e16] [cursor=pointer]:
+          - /url: /solutions
+          - generic [ref=e17] [cursor=pointer]: Solutions
+        - link "About" [ref=e18] [cursor=pointer]:
+          - /url: /about
+          - generic [ref=e19] [cursor=pointer]: About
+        - link "Case Studies" [ref=e20] [cursor=pointer]:
+          - /url: /case-studies
+          - generic [ref=e21] [cursor=pointer]: Case Studies
+        - link "Resources" [ref=e22] [cursor=pointer]:
+          - /url: /resources
+          - generic [ref=e23] [cursor=pointer]: Resources
+        - link "Contact" [active] [ref=e24] [cursor=pointer]:
+          - /url: "#contact"
+          - generic [ref=e25] [cursor=pointer]: Contact
+      - generic [ref=e27]:
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29] [cursor=pointer]
+        - button "Get Started" [ref=e31] [cursor=pointer]
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - img [ref=e42]
+          - text: Success Stories
+        - heading "Transforming Vision into Reality" [level=1] [ref=e45]:
+          - text: Transforming Vision into
+          - generic [ref=e46]: Reality
+        - paragraph [ref=e47]: Explore how we've helped businesses across industries achieve extraordinary results through innovative technology solutions and strategic partnerships.
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: 500+
+            - generic [ref=e51]: Projects Delivered
+          - generic [ref=e52]:
+            - generic [ref=e53]: 95%
+            - generic [ref=e54]: Client Retention
+          - generic [ref=e55]:
+            - generic [ref=e56]: $2B+
+            - generic [ref=e57]: Client Revenue Generated
+          - generic [ref=e58]:
+            - generic [ref=e59]: 50+
+            - generic [ref=e60]: Industry Awards
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - button "All Projects(8)" [ref=e64] [cursor=pointer]:
+            - text: All Projects
+            - generic [ref=e65] [cursor=pointer]: (8)
+          - button "Enterprise" [ref=e66] [cursor=pointer]
+          - button "FinTech" [ref=e67] [cursor=pointer]
+          - button "Healthcare" [ref=e68] [cursor=pointer]
+          - button "E-Commerce" [ref=e69] [cursor=pointer]
+          - button "SaaS" [ref=e70] [cursor=pointer]
+          - button "Startups" [ref=e71] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e74] [cursor=pointer]:
+            - generic [ref=e75] [cursor=pointer]:
+              - generic [ref=e77] [cursor=pointer]:
+                - img [ref=e79] [cursor=pointer]
+                - generic [ref=e83] [cursor=pointer]: GlobalPay Solutions
+              - generic [ref=e85] [cursor=pointer]: fintech
+            - generic [ref=e86] [cursor=pointer]:
+              - heading "Revolutionizing Digital Payments Infrastructure" [level=3] [ref=e87] [cursor=pointer]
+              - paragraph [ref=e88] [cursor=pointer]: Built a secure, scalable payment processing platform handling 10M+ transactions daily
+              - generic [ref=e89] [cursor=pointer]:
+                - generic [ref=e90] [cursor=pointer]:
+                  - generic [ref=e91] [cursor=pointer]: 99.99%
+                  - generic [ref=e92] [cursor=pointer]: Uptime Achieved
+                - generic [ref=e93] [cursor=pointer]:
+                  - generic [ref=e94] [cursor=pointer]: 0.3s
+                  - generic [ref=e95] [cursor=pointer]: Transaction Time
+                - generic [ref=e96] [cursor=pointer]:
+                  - generic [ref=e97] [cursor=pointer]: 60%
+                  - generic [ref=e98] [cursor=pointer]: Cost Reduction
+                - generic [ref=e99] [cursor=pointer]:
+                  - generic [ref=e100] [cursor=pointer]: 10M+
+                  - generic [ref=e101] [cursor=pointer]: Daily Transactions
+              - generic [ref=e102] [cursor=pointer]:
+                - generic [ref=e103] [cursor=pointer]: AWS
+                - generic [ref=e104] [cursor=pointer]: Kubernetes
+                - generic [ref=e105] [cursor=pointer]: Python
+                - generic [ref=e106] [cursor=pointer]: React
+                - generic [ref=e107] [cursor=pointer]: +3 more
+              - generic [ref=e108] [cursor=pointer]:
+                - generic [ref=e109] [cursor=pointer]:
+                  - img [ref=e110] [cursor=pointer]
+                  - text: 8 months
+                - generic [ref=e113] [cursor=pointer]:
+                  - img [ref=e114] [cursor=pointer]
+                  - text: 12 engineers
+              - generic [ref=e120] [cursor=pointer]:
+                - img [ref=e121] [cursor=pointer]
+                - generic [ref=e123] [cursor=pointer]:
+                  - paragraph [ref=e124] [cursor=pointer]: "\"Kingsmen transformed our payment infrastructure beyond our expectations. The new system handles 10x our previous capacity with better performance and lower costs.\""
+                  - paragraph [ref=e125] [cursor=pointer]: — Sarah Chen, CTO, GlobalPay Solutions
+              - button "View Full Case Study" [ref=e126] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e128] [cursor=pointer]
+          - generic [ref=e132] [cursor=pointer]:
+            - generic [ref=e133] [cursor=pointer]:
+              - generic [ref=e135] [cursor=pointer]:
+                - img [ref=e137] [cursor=pointer]
+                - generic [ref=e139] [cursor=pointer]: MediCare Plus
+              - generic [ref=e141] [cursor=pointer]: healthcare
+            - generic [ref=e142] [cursor=pointer]:
+              - heading "AI-Powered Healthcare Management Platform" [level=3] [ref=e143] [cursor=pointer]
+              - paragraph [ref=e144] [cursor=pointer]: Developed an intelligent healthcare platform serving 500K+ patients with predictive analytics
+              - generic [ref=e145] [cursor=pointer]:
+                - generic [ref=e146] [cursor=pointer]:
+                  - generic [ref=e147] [cursor=pointer]: 500K+
+                  - generic [ref=e148] [cursor=pointer]: Active Patients
+                - generic [ref=e149] [cursor=pointer]:
+                  - generic [ref=e150] [cursor=pointer]: 40%
+                  - generic [ref=e151] [cursor=pointer]: Reduced Wait Times
+                - generic [ref=e152] [cursor=pointer]:
+                  - generic [ref=e153] [cursor=pointer]: 85%
+                  - generic [ref=e154] [cursor=pointer]: Patient Satisfaction
+                - generic [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156] [cursor=pointer]: 30%
+                  - generic [ref=e157] [cursor=pointer]: Operational Savings
+              - generic [ref=e158] [cursor=pointer]:
+                - generic [ref=e159] [cursor=pointer]: Azure
+                - generic [ref=e160] [cursor=pointer]: React Native
+                - generic [ref=e161] [cursor=pointer]: Node.js
+                - generic [ref=e162] [cursor=pointer]: TensorFlow
+                - generic [ref=e163] [cursor=pointer]: +3 more
+              - generic [ref=e164] [cursor=pointer]:
+                - generic [ref=e165] [cursor=pointer]:
+                  - img [ref=e166] [cursor=pointer]
+                  - text: 12 months
+                - generic [ref=e169] [cursor=pointer]:
+                  - img [ref=e170] [cursor=pointer]
+                  - text: 15 engineers
+              - generic [ref=e176] [cursor=pointer]:
+                - img [ref=e177] [cursor=pointer]
+                - generic [ref=e179] [cursor=pointer]:
+                  - paragraph [ref=e180] [cursor=pointer]: "\"The platform has revolutionized how we deliver healthcare. Patient outcomes have improved significantly with the predictive analytics features.\""
+                  - paragraph [ref=e181] [cursor=pointer]: — Dr. Michael Roberts, Chief Medical Officer, MediCare Plus
+              - button "View Full Case Study" [ref=e182] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e184] [cursor=pointer]
+          - generic [ref=e188] [cursor=pointer]:
+            - generic [ref=e189] [cursor=pointer]:
+              - generic [ref=e191] [cursor=pointer]:
+                - img [ref=e193] [cursor=pointer]
+                - generic [ref=e197] [cursor=pointer]: ShopSphere
+              - generic [ref=e199] [cursor=pointer]: ecommerce
+            - generic [ref=e200] [cursor=pointer]:
+              - heading "Next-Gen E-Commerce Platform" [level=3] [ref=e201] [cursor=pointer]
+              - paragraph [ref=e202] [cursor=pointer]: Scaled e-commerce platform from startup to $100M+ annual revenue with global reach
+              - generic [ref=e203] [cursor=pointer]:
+                - generic [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205] [cursor=pointer]: 250%
+                  - generic [ref=e206] [cursor=pointer]: Revenue Growth
+                - generic [ref=e207] [cursor=pointer]:
+                  - generic [ref=e208] [cursor=pointer]: 1.8s
+                  - generic [ref=e209] [cursor=pointer]: Page Load Time
+                - generic [ref=e210] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: 45%
+                  - generic [ref=e212] [cursor=pointer]: Conversion Rate Increase
+                - generic [ref=e213] [cursor=pointer]:
+                  - generic [ref=e214] [cursor=pointer]: 2M+
+                  - generic [ref=e215] [cursor=pointer]: Monthly Users
+              - generic [ref=e216] [cursor=pointer]:
+                - generic [ref=e217] [cursor=pointer]: Next.js
+                - generic [ref=e218] [cursor=pointer]: Vercel
+                - generic [ref=e219] [cursor=pointer]: Shopify API
+                - generic [ref=e220] [cursor=pointer]: GraphQL
+                - generic [ref=e221] [cursor=pointer]: +3 more
+              - generic [ref=e222] [cursor=pointer]:
+                - generic [ref=e223] [cursor=pointer]:
+                  - img [ref=e224] [cursor=pointer]
+                  - text: 6 months
+                - generic [ref=e227] [cursor=pointer]:
+                  - img [ref=e228] [cursor=pointer]
+                  - text: 10 engineers
+              - generic [ref=e234] [cursor=pointer]:
+                - img [ref=e235] [cursor=pointer]
+                - generic [ref=e237] [cursor=pointer]:
+                  - paragraph [ref=e238] [cursor=pointer]: "\"Kingsmen didn't just build us a platform; they built us a competitive advantage. Our conversion rates have never been higher.\""
+                  - paragraph [ref=e239] [cursor=pointer]: — Jennifer Martinez, CEO, ShopSphere
+              - button "View Full Case Study" [ref=e240] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e242] [cursor=pointer]
+          - generic [ref=e246] [cursor=pointer]:
+            - generic [ref=e247] [cursor=pointer]:
+              - generic [ref=e249] [cursor=pointer]:
+                - img [ref=e251] [cursor=pointer]
+                - generic [ref=e256] [cursor=pointer]: TechCorp Industries
+              - generic [ref=e258] [cursor=pointer]: enterprise
+            - generic [ref=e259] [cursor=pointer]:
+              - heading "Enterprise Digital Transformation" [level=3] [ref=e260] [cursor=pointer]
+              - paragraph [ref=e261] [cursor=pointer]: Led complete digital transformation for Fortune 500 manufacturing company
+              - generic [ref=e262] [cursor=pointer]:
+                - generic [ref=e263] [cursor=pointer]:
+                  - generic [ref=e264] [cursor=pointer]: 35%
+                  - generic [ref=e265] [cursor=pointer]: Efficiency Increase
+                - generic [ref=e266] [cursor=pointer]:
+                  - generic [ref=e267] [cursor=pointer]: $15M
+                  - generic [ref=e268] [cursor=pointer]: Annual Savings
+                - generic [ref=e269] [cursor=pointer]:
+                  - generic [ref=e270] [cursor=pointer]: "50"
+                  - generic [ref=e271] [cursor=pointer]: Factories Connected
+                - generic [ref=e272] [cursor=pointer]:
+                  - generic [ref=e273] [cursor=pointer]: 80%
+                  - generic [ref=e274] [cursor=pointer]: Reduced Downtime
+              - generic [ref=e275] [cursor=pointer]:
+                - generic [ref=e276] [cursor=pointer]: GCP
+                - generic [ref=e277] [cursor=pointer]: IoT Core
+                - generic [ref=e278] [cursor=pointer]: BigQuery
+                - generic [ref=e279] [cursor=pointer]: Kubernetes
+                - generic [ref=e280] [cursor=pointer]: +3 more
+              - generic [ref=e281] [cursor=pointer]:
+                - generic [ref=e282] [cursor=pointer]:
+                  - img [ref=e283] [cursor=pointer]
+                  - text: 18 months
+                - generic [ref=e286] [cursor=pointer]:
+                  - img [ref=e287] [cursor=pointer]
+                  - text: 25 engineers
+              - generic [ref=e293] [cursor=pointer]:
+                - img [ref=e294] [cursor=pointer]
+                - generic [ref=e296] [cursor=pointer]:
+                  - paragraph [ref=e297] [cursor=pointer]: "\"The digital transformation led by Kingsmen has positioned us as an industry leader in smart manufacturing.\""
+                  - paragraph [ref=e298] [cursor=pointer]: — Robert Johnson, COO, TechCorp Industries
+              - button "View Full Case Study" [ref=e299] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e301] [cursor=pointer]
+          - generic [ref=e305] [cursor=pointer]:
+            - generic [ref=e306] [cursor=pointer]:
+              - generic [ref=e308] [cursor=pointer]:
+                - img [ref=e310] [cursor=pointer]
+                - generic [ref=e312] [cursor=pointer]: CloudSync Pro
+              - generic [ref=e314] [cursor=pointer]: saas
+            - generic [ref=e315] [cursor=pointer]:
+              - heading "Multi-Cloud SaaS Platform" [level=3] [ref=e316] [cursor=pointer]
+              - paragraph [ref=e317] [cursor=pointer]: Built a revolutionary cloud management platform serving 1000+ enterprise clients
+              - generic [ref=e318] [cursor=pointer]:
+                - generic [ref=e319] [cursor=pointer]:
+                  - generic [ref=e320] [cursor=pointer]: 1000+
+                  - generic [ref=e321] [cursor=pointer]: Enterprise Clients
+                - generic [ref=e322] [cursor=pointer]:
+                  - generic [ref=e323] [cursor=pointer]: 40%
+                  - generic [ref=e324] [cursor=pointer]: Average Cost Savings
+                - generic [ref=e325] [cursor=pointer]:
+                  - generic [ref=e326] [cursor=pointer]: $50M+
+                  - generic [ref=e327] [cursor=pointer]: Resources Managed
+                - generic [ref=e328] [cursor=pointer]:
+                  - generic [ref=e329] [cursor=pointer]: 99.95%
+                  - generic [ref=e330] [cursor=pointer]: Platform Uptime
+              - generic [ref=e331] [cursor=pointer]:
+                - generic [ref=e332] [cursor=pointer]: Go
+                - generic [ref=e333] [cursor=pointer]: React
+                - generic [ref=e334] [cursor=pointer]: Terraform
+                - generic [ref=e335] [cursor=pointer]: Prometheus
+                - generic [ref=e336] [cursor=pointer]: +3 more
+              - generic [ref=e337] [cursor=pointer]:
+                - generic [ref=e338] [cursor=pointer]:
+                  - img [ref=e339] [cursor=pointer]
+                  - text: 10 months
+                - generic [ref=e342] [cursor=pointer]:
+                  - img [ref=e343] [cursor=pointer]
+                  - text: 18 engineers
+              - generic [ref=e349] [cursor=pointer]:
+                - img [ref=e350] [cursor=pointer]
+                - generic [ref=e352] [cursor=pointer]:
+                  - paragraph [ref=e353] [cursor=pointer]: "\"CloudSync Pro has become essential to our multi-cloud strategy. The cost savings alone justified the investment within months.\""
+                  - paragraph [ref=e354] [cursor=pointer]: — Alex Thompson, VP Engineering, Fortune 100 Client
+              - button "View Full Case Study" [ref=e355] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e357] [cursor=pointer]
+          - generic [ref=e361] [cursor=pointer]:
+            - generic [ref=e362] [cursor=pointer]:
+              - generic [ref=e364] [cursor=pointer]:
+                - img [ref=e366] [cursor=pointer]
+                - generic [ref=e368] [cursor=pointer]: EduLearn
+              - generic [ref=e370] [cursor=pointer]: startup
+            - generic [ref=e371] [cursor=pointer]:
+              - heading "AI-Powered Learning Platform" [level=3] [ref=e372] [cursor=pointer]
+              - paragraph [ref=e373] [cursor=pointer]: Helped EdTech startup scale from idea to 100K+ active learners in 12 months
+              - generic [ref=e374] [cursor=pointer]:
+                - generic [ref=e375] [cursor=pointer]:
+                  - generic [ref=e376] [cursor=pointer]: 100K+
+                  - generic [ref=e377] [cursor=pointer]: Active Learners
+                - generic [ref=e378] [cursor=pointer]:
+                  - generic [ref=e379] [cursor=pointer]: 4.8/5
+                  - generic [ref=e380] [cursor=pointer]: User Rating
+                - generic [ref=e381] [cursor=pointer]:
+                  - generic [ref=e382] [cursor=pointer]: $5M
+                  - generic [ref=e383] [cursor=pointer]: Series A Funding
+                - generic [ref=e384] [cursor=pointer]:
+                  - generic [ref=e385] [cursor=pointer]: 85%
+                  - generic [ref=e386] [cursor=pointer]: Course Completion
+              - generic [ref=e387] [cursor=pointer]:
+                - generic [ref=e388] [cursor=pointer]: Next.js
+                - generic [ref=e389] [cursor=pointer]: Node.js
+                - generic [ref=e390] [cursor=pointer]: MongoDB
+                - generic [ref=e391] [cursor=pointer]: OpenAI API
+                - generic [ref=e392] [cursor=pointer]: +3 more
+              - generic [ref=e393] [cursor=pointer]:
+                - generic [ref=e394] [cursor=pointer]:
+                  - img [ref=e395] [cursor=pointer]
+                  - text: 4 months
+                - generic [ref=e398] [cursor=pointer]:
+                  - img [ref=e399] [cursor=pointer]
+                  - text: 6 engineers
+              - generic [ref=e405] [cursor=pointer]:
+                - img [ref=e406] [cursor=pointer]
+                - generic [ref=e408] [cursor=pointer]:
+                  - paragraph [ref=e409] [cursor=pointer]: "\"Kingsmen was instrumental in our success. They built exactly what we needed and scaled with us every step of the way.\""
+                  - paragraph [ref=e410] [cursor=pointer]: — Maria Rodriguez, Founder & CEO, EduLearn
+              - button "View Full Case Study" [ref=e411] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e413] [cursor=pointer]
+          - generic [ref=e417] [cursor=pointer]:
+            - generic [ref=e418] [cursor=pointer]:
+              - generic [ref=e420] [cursor=pointer]:
+                - img [ref=e422] [cursor=pointer]
+                - generic [ref=e426] [cursor=pointer]: CryptoVault
+              - generic [ref=e428] [cursor=pointer]: fintech
+            - generic [ref=e429] [cursor=pointer]:
+              - heading "Secure Cryptocurrency Exchange Platform" [level=3] [ref=e430] [cursor=pointer]
+              - paragraph [ref=e431] [cursor=pointer]: Developed a high-performance crypto trading platform with military-grade security
+              - generic [ref=e432] [cursor=pointer]:
+                - generic [ref=e433] [cursor=pointer]:
+                  - generic [ref=e434] [cursor=pointer]: $1B+
+                  - generic [ref=e435] [cursor=pointer]: Daily Volume
+                - generic [ref=e436] [cursor=pointer]:
+                  - generic [ref=e437] [cursor=pointer]: 0.05s
+                  - generic [ref=e438] [cursor=pointer]: Trade Execution
+                - generic [ref=e439] [cursor=pointer]:
+                  - generic [ref=e440] [cursor=pointer]: Zero
+                  - generic [ref=e441] [cursor=pointer]: Security Breaches
+                - generic [ref=e442] [cursor=pointer]:
+                  - generic [ref=e443] [cursor=pointer]: 500K+
+                  - generic [ref=e444] [cursor=pointer]: Active Traders
+              - generic [ref=e445] [cursor=pointer]:
+                - generic [ref=e446] [cursor=pointer]: Rust
+                - generic [ref=e447] [cursor=pointer]: React
+                - generic [ref=e448] [cursor=pointer]: PostgreSQL
+                - generic [ref=e449] [cursor=pointer]: Redis
+                - generic [ref=e450] [cursor=pointer]: +3 more
+              - generic [ref=e451] [cursor=pointer]:
+                - generic [ref=e452] [cursor=pointer]:
+                  - img [ref=e453] [cursor=pointer]
+                  - text: 9 months
+                - generic [ref=e456] [cursor=pointer]:
+                  - img [ref=e457] [cursor=pointer]
+                  - text: 20 engineers
+              - generic [ref=e463] [cursor=pointer]:
+                - img [ref=e464] [cursor=pointer]
+                - generic [ref=e466] [cursor=pointer]:
+                  - paragraph [ref=e467] [cursor=pointer]: "\"The platform's performance and security exceed anything else in the market. Kingsmen delivered beyond our highest expectations.\""
+                  - paragraph [ref=e468] [cursor=pointer]: — David Kim, CTO, CryptoVault
+              - button "View Full Case Study" [ref=e469] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e471] [cursor=pointer]
+          - generic [ref=e475] [cursor=pointer]:
+            - generic [ref=e476] [cursor=pointer]:
+              - generic [ref=e478] [cursor=pointer]:
+                - img [ref=e480] [cursor=pointer]
+                - generic [ref=e482] [cursor=pointer]: GenomeTech
+              - generic [ref=e484] [cursor=pointer]: healthcare
+            - generic [ref=e485] [cursor=pointer]:
+              - heading "Genomic Data Analysis Platform" [level=3] [ref=e486] [cursor=pointer]
+              - paragraph [ref=e487] [cursor=pointer]: Built a cutting-edge platform for processing and analyzing genomic data at scale
+              - generic [ref=e488] [cursor=pointer]:
+                - generic [ref=e489] [cursor=pointer]:
+                  - generic [ref=e490] [cursor=pointer]: 100TB+
+                  - generic [ref=e491] [cursor=pointer]: Data Processed
+                - generic [ref=e492] [cursor=pointer]:
+                  - generic [ref=e493] [cursor=pointer]: 95%
+                  - generic [ref=e494] [cursor=pointer]: Analysis Accuracy
+                - generic [ref=e495] [cursor=pointer]:
+                  - generic [ref=e496] [cursor=pointer]: 10x
+                  - generic [ref=e497] [cursor=pointer]: Faster Processing
+                - generic [ref=e498] [cursor=pointer]:
+                  - generic [ref=e499] [cursor=pointer]: 50+
+                  - generic [ref=e500] [cursor=pointer]: Research Partners
+              - generic [ref=e501] [cursor=pointer]:
+                - generic [ref=e502] [cursor=pointer]: Python
+                - generic [ref=e503] [cursor=pointer]: Spark
+                - generic [ref=e504] [cursor=pointer]: TensorFlow
+                - generic [ref=e505] [cursor=pointer]: Kubernetes
+                - generic [ref=e506] [cursor=pointer]: +3 more
+              - generic [ref=e507] [cursor=pointer]:
+                - generic [ref=e508] [cursor=pointer]:
+                  - img [ref=e509] [cursor=pointer]
+                  - text: 14 months
+                - generic [ref=e512] [cursor=pointer]:
+                  - img [ref=e513] [cursor=pointer]
+                  - text: 12 engineers
+              - generic [ref=e519] [cursor=pointer]:
+                - img [ref=e520] [cursor=pointer]
+                - generic [ref=e522] [cursor=pointer]:
+                  - paragraph [ref=e523] [cursor=pointer]: "\"This platform has accelerated our research capabilities exponentially. What took weeks now takes hours.\""
+                  - paragraph [ref=e524] [cursor=pointer]: — Dr. Emily Watson, Head of Research, GenomeTech
+              - button "View Full Case Study" [ref=e525] [cursor=pointer]:
+                - text: View Full Case Study
+                - img [ref=e527] [cursor=pointer]
+      - generic [ref=e532]:
+        - heading "Ready to Be Our Next Success Story?" [level=2] [ref=e533]
+        - paragraph [ref=e534]: Join hundreds of companies that have transformed their business with our solutions. Let's discuss how we can help you achieve extraordinary results.
+        - generic [ref=e535]:
+          - button "Start Your Project" [ref=e536] [cursor=pointer]
+          - button "Schedule Consultation" [ref=e537] [cursor=pointer]
+  - contentinfo [ref=e538]:
+    - generic [ref=e540]:
+      - generic [ref=e542]:
+        - generic [ref=e543]:
+          - generic [ref=e545]: K
+          - generic [ref=e546]:
+            - generic [ref=e547]: Kingsmen
+            - generic [ref=e548]: Consultancy
+        - paragraph [ref=e549]: Transforming businesses through world-class software solutions and cloud architecture. We help organizations innovate, scale, and succeed in the digital age.
+        - generic [ref=e550]:
+          - generic [ref=e551]:
+            - img [ref=e552]
+            - generic [ref=e555]: hello@kingsmenconsultancy.com
+          - generic [ref=e556]:
+            - img [ref=e557]
+            - generic [ref=e559]: +1 (555) 123-4567
+          - generic [ref=e560]:
+            - img [ref=e561]
+            - generic [ref=e564]: San Francisco, CA
+        - generic [ref=e565]:
+          - link [ref=e566] [cursor=pointer]:
+            - /url: https://linkedin.com/company/kingsmen-consultancy
+            - img [ref=e567] [cursor=pointer]
+          - link [ref=e571] [cursor=pointer]:
+            - /url: https://twitter.com/kingsmen_tech
+            - img [ref=e572] [cursor=pointer]
+          - link [ref=e574] [cursor=pointer]:
+            - /url: https://github.com/kingsmen-consultancy
+            - img [ref=e575] [cursor=pointer]
+      - generic [ref=e578]:
+        - heading "Services" [level=3] [ref=e579]
+        - list [ref=e580]:
+          - listitem [ref=e581]:
+            - link "Custom Software Development" [ref=e582] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e583]:
+            - link "Cloud Architecture & Migration" [ref=e584] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e585]:
+            - link "Data Engineering & Analytics" [ref=e586] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e587]:
+            - link "Cybersecurity & Compliance" [ref=e588] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e589]:
+            - link "Digital Transformation" [ref=e590] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e591]:
+            - link "Technical Consulting" [ref=e592] [cursor=pointer]:
+              - /url: "#services"
+      - generic [ref=e593]:
+        - heading "Solutions" [level=3] [ref=e594]
+        - list [ref=e595]:
+          - listitem [ref=e596]:
+            - link "E-Commerce Solutions" [ref=e597] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e598]:
+            - link "Healthcare Systems" [ref=e599] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e600]:
+            - link "Financial Technology" [ref=e601] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e602]:
+            - link "IoT Platforms" [ref=e603] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e604]:
+            - link "AI & Machine Learning" [ref=e605] [cursor=pointer]:
+              - /url: "#solutions"
+          - listitem [ref=e606]:
+            - link "Legacy Modernization" [ref=e607] [cursor=pointer]:
+              - /url: "#solutions"
+      - generic [ref=e608]:
+        - heading "Company" [level=3] [ref=e609]
+        - list [ref=e610]:
+          - listitem [ref=e611]:
+            - link "About Us" [ref=e612] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e613]:
+            - link "Our Team" [ref=e614] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e615]:
+            - link "Case Studies" [ref=e616] [cursor=pointer]:
+              - /url: "#case-studies"
+          - listitem [ref=e617]:
+            - link "Careers" [ref=e618] [cursor=pointer]:
+              - /url: "#careers"
+          - listitem [ref=e619]:
+            - link "Blog" [ref=e620] [cursor=pointer]:
+              - /url: "#blog"
+          - listitem [ref=e621]:
+            - link "Contact" [ref=e622] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e623]:
+        - heading "Resources" [level=3] [ref=e624]
+        - list [ref=e625]:
+          - listitem [ref=e626]:
+            - link "Documentation" [ref=e627] [cursor=pointer]:
+              - /url: "#docs"
+          - listitem [ref=e628]:
+            - link "API Reference" [ref=e629] [cursor=pointer]:
+              - /url: "#api"
+          - listitem [ref=e630]:
+            - link "Whitepapers" [ref=e631] [cursor=pointer]:
+              - /url: "#whitepapers"
+          - listitem [ref=e632]:
+            - link "Webinars" [ref=e633] [cursor=pointer]:
+              - /url: "#webinars"
+          - listitem [ref=e634]:
+            - link "Support Center" [ref=e635] [cursor=pointer]:
+              - /url: "#support"
+          - listitem [ref=e636]:
+            - link "Privacy Policy" [ref=e637] [cursor=pointer]:
+              - /url: "#privacy"
+    - generic [ref=e640]:
+      - heading "Stay Updated with Our Latest Insights" [level=3] [ref=e641]
+      - paragraph [ref=e642]: Get the latest industry insights, technology trends, and company updates delivered to your inbox.
+      - generic [ref=e643]:
+        - textbox "Enter your email" [ref=e644]
+        - button "Subscribe" [ref=e645] [cursor=pointer]
+    - generic [ref=e648]:
+      - generic [ref=e649]: © 2024 Kingsmen Consultancy. All rights reserved.
+      - generic [ref=e650]:
+        - link "Privacy Policy" [ref=e651] [cursor=pointer]:
+          - /url: "#privacy"
+        - link "Terms of Service" [ref=e652] [cursor=pointer]:
+          - /url: "#terms"
+        - link "Cookie Policy" [ref=e653] [cursor=pointer]:
+          - /url: "#cookies"
+      - button [ref=e654] [cursor=pointer]:
+        - img [ref=e655] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e663] [cursor=pointer]:
+    - img [ref=e664] [cursor=pointer]
+  - alert [ref=e668]
+```

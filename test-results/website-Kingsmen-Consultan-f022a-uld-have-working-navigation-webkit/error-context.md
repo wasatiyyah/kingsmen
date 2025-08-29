@@ -1,0 +1,830 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: K
+        - generic [ref=e9]: Kingsmen
+        - generic [ref=e10]: Consultancy
+      - navigation [ref=e11]:
+        - link "Home" [ref=e12]:
+          - /url: /
+          - generic [ref=e13] [cursor=pointer]: Home
+        - link "Services" [ref=e14]:
+          - /url: /services
+          - generic [ref=e15] [cursor=pointer]: Services
+        - link "Solutions" [ref=e16]:
+          - /url: /solutions
+          - generic [ref=e17] [cursor=pointer]: Solutions
+        - link "About" [ref=e18]:
+          - /url: /about
+          - generic [ref=e19] [cursor=pointer]: About
+        - link "Case Studies" [ref=e20]:
+          - /url: /case-studies
+          - generic [ref=e21] [cursor=pointer]: Case Studies
+        - link "Resources" [ref=e22]:
+          - /url: /resources
+          - generic [ref=e23] [cursor=pointer]: Resources
+        - link "Contact" [ref=e24]:
+          - /url: "#contact"
+          - generic [ref=e25] [cursor=pointer]: Contact
+      - generic [ref=e26]:
+        - button [ref=e27] [cursor=pointer]:
+          - img [ref=e28] [cursor=pointer]
+        - button "Get Started" [ref=e30] [cursor=pointer]
+  - main [ref=e31]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - img [ref=e42]
+          - text: Trusted by 500+ Companies Worldwide
+        - heading "Transforming Businesses Through World-Class Software Solutions" [level=1] [ref=e44]:
+          - text: Transforming Businesses Through
+          - generic [ref=e45]: World-Class
+          - text: Software Solutions
+        - paragraph [ref=e46]: We specialize in cloud architecture, software development, and digital transformation. Let us help you build scalable, innovative solutions that drive your business forward.
+        - generic [ref=e47]:
+          - button "Start Your Project" [ref=e48] [cursor=pointer]:
+            - text: Start Your Project
+            - img [ref=e50] [cursor=pointer]
+          - button "Watch Demo" [ref=e52] [cursor=pointer]:
+            - img [ref=e54] [cursor=pointer]
+            - text: Watch Demo
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e64]: 500+
+            - generic [ref=e65]: Happy Clients
+          - generic [ref=e66]:
+            - img [ref=e68]
+            - generic [ref=e70]: 50+
+            - generic [ref=e71]: Projects Delivered
+          - generic [ref=e72]:
+            - img [ref=e74]
+            - generic [ref=e76]: 99%
+            - generic [ref=e77]: Client Satisfaction
+          - generic [ref=e78]:
+            - img [ref=e80]
+            - generic [ref=e82]: 24/7
+            - generic [ref=e83]: Support Available
+      - generic [ref=e86]:
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e92]: System Status
+            - generic [ref=e93]: Live
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: 99.9%
+              - generic [ref=e97]: Uptime
+            - generic [ref=e98]:
+              - generic [ref=e99]: 2.1s
+              - generic [ref=e100]: Response
+            - generic [ref=e101]:
+              - generic [ref=e102]: 1M+
+              - generic [ref=e103]: Requests
+          - generic [ref=e105]:
+            - generic [ref=e106]: Performance
+            - generic [ref=e107]: +15%
+        - generic [ref=e111]:
+          - generic [ref=e113]: ✓
+          - generic [ref=e114]:
+            - generic [ref=e115]: Deployed
+            - generic [ref=e116]: 2 min ago
+        - generic [ref=e118]:
+          - generic [ref=e120]: ⚡
+          - generic [ref=e121]:
+            - generic [ref=e122]: Optimized
+            - generic [ref=e123]: Performance
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - img [ref=e131]
+          - text: Our Services
+        - heading "Comprehensive Solutions for Modern Businesses" [level=2] [ref=e133]:
+          - text: Comprehensive Solutions for
+          - generic [ref=e134]: Modern Businesses
+        - paragraph [ref=e135]: From custom software development to cloud architecture, we provide end-to-end solutions that drive innovation and accelerate your business growth.
+      - generic [ref=e136]:
+        - generic [ref=e138] [cursor=pointer]:
+          - img [ref=e140] [cursor=pointer]
+          - heading "Custom Software Development" [level=3] [ref=e143] [cursor=pointer]
+          - paragraph [ref=e144] [cursor=pointer]: Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.
+          - list [ref=e145] [cursor=pointer]:
+            - listitem [ref=e146] [cursor=pointer]:
+              - img [ref=e147] [cursor=pointer]
+              - text: Web & Mobile Applications
+            - listitem [ref=e150] [cursor=pointer]:
+              - img [ref=e151] [cursor=pointer]
+              - text: API Development & Integration
+            - listitem [ref=e154] [cursor=pointer]:
+              - img [ref=e155] [cursor=pointer]
+              - text: Legacy System Modernization
+            - listitem [ref=e158] [cursor=pointer]:
+              - img [ref=e159] [cursor=pointer]
+              - text: Scalable Architecture Design
+          - button "Learn More" [ref=e162] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e164] [cursor=pointer]
+        - generic [ref=e167] [cursor=pointer]:
+          - img [ref=e169] [cursor=pointer]
+          - heading "Cloud Architecture & Migration" [level=3] [ref=e171] [cursor=pointer]
+          - paragraph [ref=e172] [cursor=pointer]: Expert cloud solutions that optimize performance, reduce costs, and ensure scalability for your business.
+          - list [ref=e173] [cursor=pointer]:
+            - listitem [ref=e174] [cursor=pointer]:
+              - img [ref=e175] [cursor=pointer]
+              - text: AWS, Azure & Google Cloud
+            - listitem [ref=e178] [cursor=pointer]:
+              - img [ref=e179] [cursor=pointer]
+              - text: Microservices Architecture
+            - listitem [ref=e182] [cursor=pointer]:
+              - img [ref=e183] [cursor=pointer]
+              - text: DevOps & CI/CD Pipelines
+            - listitem [ref=e186] [cursor=pointer]:
+              - img [ref=e187] [cursor=pointer]
+              - text: Cost Optimization Strategies
+          - button "Learn More" [ref=e190] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e192] [cursor=pointer]
+        - generic [ref=e195] [cursor=pointer]:
+          - img [ref=e197] [cursor=pointer]
+          - heading "Data Engineering & Analytics" [level=3] [ref=e201] [cursor=pointer]
+          - paragraph [ref=e202] [cursor=pointer]: Transform your data into actionable insights with our advanced analytics and data engineering solutions.
+          - list [ref=e203] [cursor=pointer]:
+            - listitem [ref=e204] [cursor=pointer]:
+              - img [ref=e205] [cursor=pointer]
+              - text: Data Pipeline Development
+            - listitem [ref=e208] [cursor=pointer]:
+              - img [ref=e209] [cursor=pointer]
+              - text: Business Intelligence Dashboards
+            - listitem [ref=e212] [cursor=pointer]:
+              - img [ref=e213] [cursor=pointer]
+              - text: Machine Learning Integration
+            - listitem [ref=e216] [cursor=pointer]:
+              - img [ref=e217] [cursor=pointer]
+              - text: Real-time Analytics
+          - button "Learn More" [ref=e220] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e222] [cursor=pointer]
+        - generic [ref=e225] [cursor=pointer]:
+          - img [ref=e227] [cursor=pointer]
+          - heading "Cybersecurity & Compliance" [level=3] [ref=e229] [cursor=pointer]
+          - paragraph [ref=e230] [cursor=pointer]: Protect your digital assets with enterprise-grade security solutions and compliance frameworks.
+          - list [ref=e231] [cursor=pointer]:
+            - listitem [ref=e232] [cursor=pointer]:
+              - img [ref=e233] [cursor=pointer]
+              - text: Security Audits & Assessments
+            - listitem [ref=e236] [cursor=pointer]:
+              - img [ref=e237] [cursor=pointer]
+              - text: Compliance Implementation
+            - listitem [ref=e240] [cursor=pointer]:
+              - img [ref=e241] [cursor=pointer]
+              - text: Threat Detection & Response
+            - listitem [ref=e244] [cursor=pointer]:
+              - img [ref=e245] [cursor=pointer]
+              - text: Data Protection Strategies
+          - button "Learn More" [ref=e248] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e250] [cursor=pointer]
+        - generic [ref=e253] [cursor=pointer]:
+          - img [ref=e255] [cursor=pointer]
+          - heading "Digital Transformation" [level=3] [ref=e257] [cursor=pointer]
+          - paragraph [ref=e258] [cursor=pointer]: Accelerate your digital journey with strategic consulting and technology implementation.
+          - list [ref=e259] [cursor=pointer]:
+            - listitem [ref=e260] [cursor=pointer]:
+              - img [ref=e261] [cursor=pointer]
+              - text: Digital Strategy Consulting
+            - listitem [ref=e264] [cursor=pointer]:
+              - img [ref=e265] [cursor=pointer]
+              - text: Process Automation
+            - listitem [ref=e268] [cursor=pointer]:
+              - img [ref=e269] [cursor=pointer]
+              - text: Technology Roadmapping
+            - listitem [ref=e272] [cursor=pointer]:
+              - img [ref=e273] [cursor=pointer]
+              - text: Change Management
+          - button "Learn More" [ref=e276] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e278] [cursor=pointer]
+        - generic [ref=e281] [cursor=pointer]:
+          - img [ref=e283] [cursor=pointer]
+          - heading "Technical Consulting" [level=3] [ref=e288] [cursor=pointer]
+          - paragraph [ref=e289] [cursor=pointer]: Expert guidance on technology decisions, architecture reviews, and strategic planning.
+          - list [ref=e290] [cursor=pointer]:
+            - listitem [ref=e291] [cursor=pointer]:
+              - img [ref=e292] [cursor=pointer]
+              - text: Technology Assessment
+            - listitem [ref=e295] [cursor=pointer]:
+              - img [ref=e296] [cursor=pointer]
+              - text: Architecture Reviews
+            - listitem [ref=e299] [cursor=pointer]:
+              - img [ref=e300] [cursor=pointer]
+              - text: Performance Optimization
+            - listitem [ref=e303] [cursor=pointer]:
+              - img [ref=e304] [cursor=pointer]
+              - text: Strategic Planning
+          - button "Learn More" [ref=e307] [cursor=pointer]:
+            - text: Learn More
+            - img [ref=e309] [cursor=pointer]
+      - generic [ref=e312]:
+        - heading "Ready to Transform Your Business?" [level=3] [ref=e313]
+        - paragraph [ref=e314]: Let's discuss how our expertise can help you achieve your digital transformation goals and drive measurable business outcomes.
+        - generic [ref=e315]:
+          - button "Schedule Consultation" [ref=e316] [cursor=pointer]:
+            - text: Schedule Consultation
+            - img [ref=e318] [cursor=pointer]
+          - button "View Case Studies" [ref=e320] [cursor=pointer]
+    - generic [ref=e322]:
+      - generic [ref=e323]:
+        - generic [ref=e324]:
+          - img [ref=e325]
+          - text: Technology Stack
+        - heading "Powered by Industry-Leading Technologies" [level=2] [ref=e328]:
+          - text: Powered by
+          - generic [ref=e329]: Industry-Leading
+          - text: Technologies
+        - paragraph [ref=e330]: We leverage the most advanced and reliable technologies to build scalable, secure, and innovative solutions for your business
+      - generic [ref=e331]:
+        - generic [ref=e332]:
+          - heading "Cloud Platforms" [level=3] [ref=e333]
+          - generic [ref=e334]:
+            - generic [ref=e335] [cursor=pointer]:
+              - generic [ref=e338] [cursor=pointer]: ☁️
+              - paragraph [ref=e340] [cursor=pointer]: AWS
+            - generic [ref=e341] [cursor=pointer]:
+              - generic [ref=e344] [cursor=pointer]: ☁️
+              - paragraph [ref=e346] [cursor=pointer]: Azure
+            - generic [ref=e347] [cursor=pointer]:
+              - generic [ref=e350] [cursor=pointer]: ☁️
+              - paragraph [ref=e352] [cursor=pointer]: Google Cloud
+            - generic [ref=e353] [cursor=pointer]:
+              - generic [ref=e356] [cursor=pointer]: 🌊
+              - paragraph [ref=e358] [cursor=pointer]: DigitalOcean
+        - generic [ref=e359]:
+          - heading "Frontend" [level=3] [ref=e360]
+          - generic [ref=e361]:
+            - generic [ref=e362] [cursor=pointer]:
+              - generic [ref=e365] [cursor=pointer]: ⚛️
+              - paragraph [ref=e367] [cursor=pointer]: React
+            - generic [ref=e368] [cursor=pointer]:
+              - generic [ref=e371] [cursor=pointer]: 💚
+              - paragraph [ref=e373] [cursor=pointer]: Vue.js
+            - generic [ref=e374] [cursor=pointer]:
+              - generic [ref=e377] [cursor=pointer]: 🔺
+              - paragraph [ref=e379] [cursor=pointer]: Angular
+            - generic [ref=e380] [cursor=pointer]:
+              - generic [ref=e383] [cursor=pointer]: ▲
+              - paragraph [ref=e385] [cursor=pointer]: Next.js
+        - generic [ref=e386]:
+          - heading "Backend" [level=3] [ref=e387]
+          - generic [ref=e388]:
+            - generic [ref=e389] [cursor=pointer]:
+              - generic [ref=e392] [cursor=pointer]: 🟢
+              - paragraph [ref=e394] [cursor=pointer]: Node.js
+            - generic [ref=e395] [cursor=pointer]:
+              - generic [ref=e398] [cursor=pointer]: 🐍
+              - paragraph [ref=e400] [cursor=pointer]: Python
+            - generic [ref=e401] [cursor=pointer]:
+              - generic [ref=e404] [cursor=pointer]: ☕
+              - paragraph [ref=e406] [cursor=pointer]: Java
+            - generic [ref=e407] [cursor=pointer]:
+              - generic [ref=e410] [cursor=pointer]: 🐹
+              - paragraph [ref=e412] [cursor=pointer]: Go
+        - generic [ref=e413]:
+          - heading "Databases" [level=3] [ref=e414]
+          - generic [ref=e415]:
+            - generic [ref=e416] [cursor=pointer]:
+              - generic [ref=e419] [cursor=pointer]: 🐘
+              - paragraph [ref=e421] [cursor=pointer]: PostgreSQL
+            - generic [ref=e422] [cursor=pointer]:
+              - generic [ref=e425] [cursor=pointer]: 🍃
+              - paragraph [ref=e427] [cursor=pointer]: MongoDB
+            - generic [ref=e428] [cursor=pointer]:
+              - generic [ref=e431] [cursor=pointer]: 🔴
+              - paragraph [ref=e433] [cursor=pointer]: Redis
+            - generic [ref=e434] [cursor=pointer]:
+              - generic [ref=e437] [cursor=pointer]: 🐬
+              - paragraph [ref=e439] [cursor=pointer]: MySQL
+        - generic [ref=e440]:
+          - heading "DevOps & Tools" [level=3] [ref=e441]
+          - generic [ref=e442]:
+            - generic [ref=e443] [cursor=pointer]:
+              - generic [ref=e446] [cursor=pointer]: 🐳
+              - paragraph [ref=e448] [cursor=pointer]: Docker
+            - generic [ref=e449] [cursor=pointer]:
+              - generic [ref=e452] [cursor=pointer]: ☸️
+              - paragraph [ref=e454] [cursor=pointer]: Kubernetes
+            - generic [ref=e455] [cursor=pointer]:
+              - generic [ref=e458] [cursor=pointer]: 🎩
+              - paragraph [ref=e460] [cursor=pointer]: Jenkins
+            - generic [ref=e461] [cursor=pointer]:
+              - generic [ref=e464] [cursor=pointer]: 🏗️
+              - paragraph [ref=e466] [cursor=pointer]: Terraform
+        - generic [ref=e467]:
+          - heading "AI & Machine Learning" [level=3] [ref=e468]
+          - generic [ref=e469]:
+            - generic [ref=e470] [cursor=pointer]:
+              - generic [ref=e473] [cursor=pointer]: 🧠
+              - paragraph [ref=e475] [cursor=pointer]: TensorFlow
+            - generic [ref=e476] [cursor=pointer]:
+              - generic [ref=e479] [cursor=pointer]: 🔥
+              - paragraph [ref=e481] [cursor=pointer]: PyTorch
+            - generic [ref=e482] [cursor=pointer]:
+              - generic [ref=e485] [cursor=pointer]: 🤖
+              - paragraph [ref=e487] [cursor=pointer]: OpenAI
+            - generic [ref=e488] [cursor=pointer]:
+              - generic [ref=e491] [cursor=pointer]: 📊
+              - paragraph [ref=e493] [cursor=pointer]: Scikit-learn
+      - generic [ref=e495]:
+        - generic [ref=e496]:
+          - generic [ref=e497]: 50+
+          - generic [ref=e498]: Technologies Mastered
+        - generic [ref=e499]:
+          - generic [ref=e500]: 100%
+          - generic [ref=e501]: Cloud Native
+        - generic [ref=e502]:
+          - generic [ref=e503]: 24/7
+          - generic [ref=e504]: DevOps Support
+        - generic [ref=e505]:
+          - generic [ref=e506]: 99.9%
+          - generic [ref=e507]: Uptime Guarantee
+      - generic [ref=e508]:
+        - paragraph [ref=e509]: Official Partners & Certifications
+        - generic [ref=e510]:
+          - generic [ref=e511]:
+            - generic [ref=e512]: 🏆
+            - generic [ref=e513]: AWS Advanced Partner
+          - generic [ref=e514]:
+            - generic [ref=e515]: 🎖️
+            - generic [ref=e516]: Google Cloud Partner
+          - generic [ref=e517]:
+            - generic [ref=e518]: 🥇
+            - generic [ref=e519]: Microsoft Gold Partner
+          - generic [ref=e520]:
+            - generic [ref=e521]: ✅
+            - generic [ref=e522]: ISO 27001 Certified
+          - generic [ref=e523]:
+            - generic [ref=e524]: 🔒
+            - generic [ref=e525]: SOC 2 Compliant
+    - generic [ref=e527]:
+      - generic [ref=e528]:
+        - generic [ref=e529]:
+          - img [ref=e530]
+          - text: Success Stories
+        - heading "Transforming Businesses Through Innovation" [level=2] [ref=e532]:
+          - text: Transforming Businesses Through
+          - generic [ref=e533]: Innovation
+        - paragraph [ref=e534]: Discover how we've helped organizations across industries achieve remarkable results through cutting-edge technology solutions and strategic implementation.
+      - generic [ref=e535]:
+        - button "All Projects" [ref=e536] [cursor=pointer]
+        - button "Software Development" [ref=e537] [cursor=pointer]
+        - button "Cloud Architecture" [ref=e538] [cursor=pointer]
+        - button "Digital Transformation" [ref=e539] [cursor=pointer]
+      - generic [ref=e542] [cursor=pointer]:
+        - generic [ref=e543] [cursor=pointer]:
+          - generic [ref=e546] [cursor=pointer]: Featured Project
+          - generic [ref=e548] [cursor=pointer]:
+            - generic [ref=e549] [cursor=pointer]: TechRetail Inc.
+            - generic [ref=e550] [cursor=pointer]: E-Commerce
+        - generic [ref=e551] [cursor=pointer]:
+          - heading "E-Commerce Platform Modernization" [level=3] [ref=e552] [cursor=pointer]
+          - paragraph [ref=e553] [cursor=pointer]: Complete modernization of legacy e-commerce platform with microservices architecture, resulting in 300% performance improvement and 99.9% uptime.
+          - generic [ref=e554] [cursor=pointer]:
+            - heading "Key Results:" [level=4] [ref=e555] [cursor=pointer]
+            - generic [ref=e556] [cursor=pointer]:
+              - generic [ref=e557] [cursor=pointer]:
+                - img [ref=e558] [cursor=pointer]
+                - text: 300% performance improvement
+              - generic [ref=e561] [cursor=pointer]:
+                - img [ref=e562] [cursor=pointer]
+                - text: 99.9% uptime achieved
+              - generic [ref=e565] [cursor=pointer]:
+                - img [ref=e566] [cursor=pointer]
+                - text: 50% reduction in infrastructure costs
+              - generic [ref=e569] [cursor=pointer]:
+                - img [ref=e570] [cursor=pointer]
+                - text: 2M+ monthly active users
+          - generic [ref=e573] [cursor=pointer]:
+            - generic [ref=e574] [cursor=pointer]:
+              - heading "Technologies:" [level=4] [ref=e575] [cursor=pointer]
+              - generic [ref=e576] [cursor=pointer]:
+                - generic [ref=e577] [cursor=pointer]: React
+                - generic [ref=e578] [cursor=pointer]: Node.js
+                - generic [ref=e579] [cursor=pointer]: AWS
+                - generic [ref=e580] [cursor=pointer]: MongoDB
+                - generic [ref=e581] [cursor=pointer]: Redis
+            - generic [ref=e582] [cursor=pointer]:
+              - generic [ref=e583] [cursor=pointer]:
+                - img [ref=e584] [cursor=pointer]
+                - text: "Duration: 6 months"
+              - generic [ref=e587] [cursor=pointer]:
+                - img [ref=e588] [cursor=pointer]
+                - text: "Team: 8 developers"
+          - button "View Full Case Study" [ref=e593] [cursor=pointer]:
+            - text: View Full Case Study
+            - img [ref=e595] [cursor=pointer]
+      - generic [ref=e601] [cursor=pointer]:
+        - generic [ref=e602] [cursor=pointer]:
+          - generic [ref=e605] [cursor=pointer]: Featured Project
+          - generic [ref=e607] [cursor=pointer]:
+            - generic [ref=e608] [cursor=pointer]: FinTech Solutions
+            - generic [ref=e609] [cursor=pointer]: Financial Services
+        - generic [ref=e610] [cursor=pointer]:
+          - heading "Cloud Migration & DevOps Transformation" [level=3] [ref=e611] [cursor=pointer]
+          - paragraph [ref=e612] [cursor=pointer]: Migrated monolithic application to cloud-native architecture with automated CI/CD pipelines and comprehensive monitoring.
+          - generic [ref=e613] [cursor=pointer]:
+            - heading "Key Results:" [level=4] [ref=e614] [cursor=pointer]
+            - generic [ref=e615] [cursor=pointer]:
+              - generic [ref=e616] [cursor=pointer]:
+                - img [ref=e617] [cursor=pointer]
+                - text: 80% faster deployment cycles
+              - generic [ref=e620] [cursor=pointer]:
+                - img [ref=e621] [cursor=pointer]
+                - text: 60% reduction in operational costs
+              - generic [ref=e624] [cursor=pointer]:
+                - img [ref=e625] [cursor=pointer]
+                - text: Zero-downtime deployments
+              - generic [ref=e628] [cursor=pointer]:
+                - img [ref=e629] [cursor=pointer]
+                - text: 24/7 automated monitoring
+          - generic [ref=e632] [cursor=pointer]:
+            - generic [ref=e633] [cursor=pointer]:
+              - heading "Technologies:" [level=4] [ref=e634] [cursor=pointer]
+              - generic [ref=e635] [cursor=pointer]:
+                - generic [ref=e636] [cursor=pointer]: AWS
+                - generic [ref=e637] [cursor=pointer]: Docker
+                - generic [ref=e638] [cursor=pointer]: Kubernetes
+                - generic [ref=e639] [cursor=pointer]: Jenkins
+                - generic [ref=e640] [cursor=pointer]: Prometheus
+            - generic [ref=e641] [cursor=pointer]:
+              - generic [ref=e642] [cursor=pointer]:
+                - img [ref=e643] [cursor=pointer]
+                - text: "Duration: 4 months"
+              - generic [ref=e646] [cursor=pointer]:
+                - img [ref=e647] [cursor=pointer]
+                - text: "Team: 6 engineers"
+          - button "View Full Case Study" [ref=e652] [cursor=pointer]:
+            - text: View Full Case Study
+            - img [ref=e654] [cursor=pointer]
+      - generic [ref=e658]:
+        - generic [ref=e660] [cursor=pointer]:
+          - generic [ref=e661] [cursor=pointer]:
+            - generic [ref=e664] [cursor=pointer]: Data Analytics
+            - generic [ref=e667] [cursor=pointer]: DataCorp Analytics
+          - generic [ref=e668] [cursor=pointer]:
+            - heading "AI-Powered Analytics Dashboard" [level=3] [ref=e669] [cursor=pointer]
+            - paragraph [ref=e670] [cursor=pointer]: Built intelligent analytics platform with machine learning capabilities for real-time business insights and predictive analytics.
+            - generic [ref=e671] [cursor=pointer]:
+              - generic [ref=e672] [cursor=pointer]:
+                - img [ref=e673] [cursor=pointer]
+                - text: "Key Results:"
+              - list [ref=e676] [cursor=pointer]:
+                - listitem [ref=e677] [cursor=pointer]:
+                  - img [ref=e678] [cursor=pointer]
+                  - text: Real-time data processing
+                - listitem [ref=e681] [cursor=pointer]:
+                  - img [ref=e682] [cursor=pointer]
+                  - text: 95% prediction accuracy
+            - generic [ref=e686] [cursor=pointer]:
+              - generic [ref=e687] [cursor=pointer]: Python
+              - generic [ref=e688] [cursor=pointer]: TensorFlow
+              - generic [ref=e689] [cursor=pointer]: React
+              - generic [ref=e690] [cursor=pointer]: "+2"
+            - button "Learn More" [ref=e691] [cursor=pointer]:
+              - text: Learn More
+              - img [ref=e693] [cursor=pointer]
+        - generic [ref=e696] [cursor=pointer]:
+          - generic [ref=e697] [cursor=pointer]:
+            - generic [ref=e700] [cursor=pointer]: Healthcare
+            - generic [ref=e703] [cursor=pointer]: MediCare Plus
+          - generic [ref=e704] [cursor=pointer]:
+            - heading "Healthcare Management System" [level=3] [ref=e705] [cursor=pointer]
+            - paragraph [ref=e706] [cursor=pointer]: Comprehensive healthcare management system with patient portals, appointment scheduling, and secure data management.
+            - generic [ref=e707] [cursor=pointer]:
+              - generic [ref=e708] [cursor=pointer]:
+                - img [ref=e709] [cursor=pointer]
+                - text: "Key Results:"
+              - list [ref=e712] [cursor=pointer]:
+                - listitem [ref=e713] [cursor=pointer]:
+                  - img [ref=e714] [cursor=pointer]
+                  - text: HIPAA compliant architecture
+                - listitem [ref=e717] [cursor=pointer]:
+                  - img [ref=e718] [cursor=pointer]
+                  - text: 40% reduction in administrative overhead
+            - generic [ref=e722] [cursor=pointer]:
+              - generic [ref=e723] [cursor=pointer]: React
+              - generic [ref=e724] [cursor=pointer]: Node.js
+              - generic [ref=e725] [cursor=pointer]: PostgreSQL
+              - generic [ref=e726] [cursor=pointer]: "+2"
+            - button "Learn More" [ref=e727] [cursor=pointer]:
+              - text: Learn More
+              - img [ref=e729] [cursor=pointer]
+        - generic [ref=e732] [cursor=pointer]:
+          - generic [ref=e733] [cursor=pointer]:
+            - generic [ref=e736] [cursor=pointer]: Manufacturing
+            - generic [ref=e739] [cursor=pointer]: SmartManufacturing
+          - generic [ref=e740] [cursor=pointer]:
+            - heading "IoT Platform Development" [level=3] [ref=e741] [cursor=pointer]
+            - paragraph [ref=e742] [cursor=pointer]: IoT platform for smart manufacturing with real-time monitoring, predictive maintenance, and automated quality control.
+            - generic [ref=e743] [cursor=pointer]:
+              - generic [ref=e744] [cursor=pointer]:
+                - img [ref=e745] [cursor=pointer]
+                - text: "Key Results:"
+              - list [ref=e748] [cursor=pointer]:
+                - listitem [ref=e749] [cursor=pointer]:
+                  - img [ref=e750] [cursor=pointer]
+                  - text: 30% reduction in downtime
+                - listitem [ref=e753] [cursor=pointer]:
+                  - img [ref=e754] [cursor=pointer]
+                  - text: Predictive maintenance alerts
+            - generic [ref=e758] [cursor=pointer]:
+              - generic [ref=e759] [cursor=pointer]: IoT
+              - generic [ref=e760] [cursor=pointer]: Python
+              - generic [ref=e761] [cursor=pointer]: React
+              - generic [ref=e762] [cursor=pointer]: "+2"
+            - button "Learn More" [ref=e763] [cursor=pointer]:
+              - text: Learn More
+              - img [ref=e765] [cursor=pointer]
+        - generic [ref=e768] [cursor=pointer]:
+          - generic [ref=e769] [cursor=pointer]:
+            - generic [ref=e772] [cursor=pointer]: Technology
+            - generic [ref=e775] [cursor=pointer]: GlobalTech Corp
+          - generic [ref=e776] [cursor=pointer]:
+            - heading "Multi-Cloud Strategy Implementation" [level=3] [ref=e777] [cursor=pointer]
+            - paragraph [ref=e778] [cursor=pointer]: Implemented multi-cloud strategy across AWS, Azure, and Google Cloud for optimal performance and cost efficiency.
+            - generic [ref=e779] [cursor=pointer]:
+              - generic [ref=e780] [cursor=pointer]:
+                - img [ref=e781] [cursor=pointer]
+                - text: "Key Results:"
+              - list [ref=e784] [cursor=pointer]:
+                - listitem [ref=e785] [cursor=pointer]:
+                  - img [ref=e786] [cursor=pointer]
+                  - text: 40% cost optimization
+                - listitem [ref=e789] [cursor=pointer]:
+                  - img [ref=e790] [cursor=pointer]
+                  - text: Enhanced disaster recovery
+            - generic [ref=e794] [cursor=pointer]:
+              - generic [ref=e795] [cursor=pointer]: AWS
+              - generic [ref=e796] [cursor=pointer]: Azure
+              - generic [ref=e797] [cursor=pointer]: GCP
+              - generic [ref=e798] [cursor=pointer]: "+2"
+            - button "Learn More" [ref=e799] [cursor=pointer]:
+              - text: Learn More
+              - img [ref=e801] [cursor=pointer]
+      - generic [ref=e804]:
+        - heading "Ready to Start Your Success Story?" [level=3] [ref=e805]
+        - paragraph [ref=e806]: Join the hundreds of companies that have transformed their business with our expertise. Let's discuss how we can help you achieve similar results.
+        - generic [ref=e807]:
+          - button "Start Your Project" [ref=e808] [cursor=pointer]:
+            - text: Start Your Project
+            - img [ref=e810] [cursor=pointer]
+          - button "Schedule Consultation" [ref=e812] [cursor=pointer]
+    - generic [ref=e814]:
+      - generic [ref=e815]:
+        - generic [ref=e816]:
+          - img [ref=e817]
+          - text: Get In Touch
+        - heading "Ready to Transform Your Business?" [level=2] [ref=e819]:
+          - text: Ready to Transform Your
+          - generic [ref=e820]: Business?
+        - paragraph [ref=e821]: Let's discuss your project requirements and explore how our expertise can help you achieve your business goals. We're here to help you succeed.
+      - generic [ref=e822]:
+        - generic [ref=e824] [cursor=pointer]:
+          - heading "Start Your Project" [level=3] [ref=e825] [cursor=pointer]
+          - generic [ref=e826] [cursor=pointer]:
+            - generic [ref=e827] [cursor=pointer]:
+              - generic [ref=e828] [cursor=pointer]:
+                - generic [ref=e829]: Full Name *
+                - textbox "Full Name *" [ref=e830]
+              - generic [ref=e831] [cursor=pointer]:
+                - generic [ref=e832]: Email Address *
+                - textbox "Email Address *" [ref=e833]
+            - generic [ref=e834] [cursor=pointer]:
+              - generic [ref=e835] [cursor=pointer]:
+                - generic [ref=e836]: Company Name
+                - textbox "Company Name" [ref=e837]
+              - generic [ref=e838] [cursor=pointer]:
+                - generic [ref=e839]: Phone Number
+                - textbox "Phone Number" [ref=e840]
+            - generic [ref=e841] [cursor=pointer]:
+              - generic [ref=e842]: Service Interest *
+              - combobox "Service Interest *" [ref=e843]:
+                - option "Select a service" [selected]
+                - option "Custom Software Development"
+                - option "Cloud Architecture & Migration"
+                - option "Data Engineering & Analytics"
+                - option "Cybersecurity & Compliance"
+                - option "Digital Transformation"
+                - option "Technical Consulting"
+            - generic [ref=e844] [cursor=pointer]:
+              - generic [ref=e845] [cursor=pointer]:
+                - generic [ref=e846]: Project Budget
+                - combobox "Project Budget" [ref=e847]:
+                  - option "Select budget range" [selected]
+                  - option "$10K - $50K"
+                  - option "$50K - $100K"
+                  - option "$100K - $250K"
+                  - option "$250K - $500K"
+                  - option "$500K+"
+              - generic [ref=e848] [cursor=pointer]:
+                - generic [ref=e849]: Project Timeline
+                - combobox "Project Timeline" [ref=e850]:
+                  - option "Select timeline" [selected]
+                  - option "1-3 months"
+                  - option "3-6 months"
+                  - option "6-12 months"
+                  - option "12+ months"
+                  - option "Not sure yet"
+            - generic [ref=e851] [cursor=pointer]:
+              - generic [ref=e852]: Project Details *
+              - textbox "Project Details *" [ref=e853]
+            - button "Send Message" [ref=e854] [cursor=pointer]:
+              - text: Send Message
+              - img [ref=e856] [cursor=pointer]
+        - generic [ref=e858]:
+          - generic [ref=e859]:
+            - generic [ref=e861] [cursor=pointer]:
+              - img [ref=e863] [cursor=pointer]
+              - heading "Email Us" [level=4] [ref=e866] [cursor=pointer]
+              - paragraph [ref=e867] [cursor=pointer]: Get in touch via email for detailed inquiries
+              - paragraph [ref=e868] [cursor=pointer]: hello@kingsmenconsultancy.com
+              - button "Send Email" [ref=e869] [cursor=pointer]
+            - generic [ref=e871] [cursor=pointer]:
+              - img [ref=e873] [cursor=pointer]
+              - heading "Call Us" [level=4] [ref=e875] [cursor=pointer]
+              - paragraph [ref=e876] [cursor=pointer]: Speak directly with our team
+              - paragraph [ref=e877] [cursor=pointer]: +1 (555) 123-4567
+              - button "Call Now" [ref=e878] [cursor=pointer]
+            - generic [ref=e880] [cursor=pointer]:
+              - img [ref=e882] [cursor=pointer]
+              - heading "Live Chat" [level=4] [ref=e884] [cursor=pointer]
+              - paragraph [ref=e885] [cursor=pointer]: Chat with us in real-time
+              - paragraph [ref=e886] [cursor=pointer]: Available 24/7
+              - button "Start Chat" [ref=e887] [cursor=pointer]
+            - generic [ref=e889] [cursor=pointer]:
+              - img [ref=e891] [cursor=pointer]
+              - heading "Visit Us" [level=4] [ref=e894] [cursor=pointer]
+              - paragraph [ref=e895] [cursor=pointer]: Schedule an in-person meeting
+              - paragraph [ref=e896] [cursor=pointer]: San Francisco, CA
+              - button "Get Directions" [ref=e897] [cursor=pointer]
+          - generic [ref=e898] [cursor=pointer]:
+            - generic [ref=e899] [cursor=pointer]:
+              - img [ref=e901] [cursor=pointer]
+              - generic [ref=e904] [cursor=pointer]:
+                - heading "Office Hours" [level=4] [ref=e905] [cursor=pointer]
+                - paragraph [ref=e906] [cursor=pointer]: We're here to help
+            - generic [ref=e907] [cursor=pointer]:
+              - generic [ref=e908] [cursor=pointer]:
+                - generic [ref=e909] [cursor=pointer]: Monday - Friday
+                - generic [ref=e910] [cursor=pointer]: 9:00 AM - 6:00 PM PST
+              - generic [ref=e911] [cursor=pointer]:
+                - generic [ref=e912] [cursor=pointer]: Saturday
+                - generic [ref=e913] [cursor=pointer]: 10:00 AM - 4:00 PM PST
+              - generic [ref=e914] [cursor=pointer]:
+                - generic [ref=e915] [cursor=pointer]: Sunday
+                - generic [ref=e916] [cursor=pointer]: Closed
+          - generic [ref=e918] [cursor=pointer]:
+            - heading "Quick Response" [level=4] [ref=e919] [cursor=pointer]
+            - paragraph [ref=e920] [cursor=pointer]: We typically respond to all inquiries within 24 hours during business days.
+            - generic [ref=e921] [cursor=pointer]:
+              - generic [ref=e922] [cursor=pointer]:
+                - img [ref=e923] [cursor=pointer]
+                - generic [ref=e926] [cursor=pointer]: 24h Response
+              - generic [ref=e927] [cursor=pointer]:
+                - img [ref=e928] [cursor=pointer]
+                - generic [ref=e931] [cursor=pointer]: Free Consultation
+  - contentinfo [ref=e932]:
+    - generic [ref=e934]:
+      - generic [ref=e936]:
+        - generic [ref=e937]:
+          - generic [ref=e939]: K
+          - generic [ref=e940]:
+            - generic [ref=e941]: Kingsmen
+            - generic [ref=e942]: Consultancy
+        - paragraph [ref=e943]: Transforming businesses through world-class software solutions and cloud architecture. We help organizations innovate, scale, and succeed in the digital age.
+        - generic [ref=e944]:
+          - generic [ref=e945]:
+            - img [ref=e946]
+            - generic [ref=e949]: hello@kingsmenconsultancy.com
+          - generic [ref=e950]:
+            - img [ref=e951]
+            - generic [ref=e953]: +1 (555) 123-4567
+          - generic [ref=e954]:
+            - img [ref=e955]
+            - generic [ref=e958]: San Francisco, CA
+        - generic [ref=e959]:
+          - link [ref=e960]:
+            - /url: https://linkedin.com/company/kingsmen-consultancy
+            - img [ref=e961]
+          - link [ref=e965]:
+            - /url: https://twitter.com/kingsmen_tech
+            - img [ref=e966]
+          - link [ref=e968]:
+            - /url: https://github.com/kingsmen-consultancy
+            - img [ref=e969]
+      - generic [ref=e972]:
+        - heading "Services" [level=3] [ref=e973]
+        - list [ref=e974]:
+          - listitem [ref=e975]:
+            - link "Custom Software Development" [ref=e976]:
+              - /url: "#services"
+          - listitem [ref=e977]:
+            - link "Cloud Architecture & Migration" [ref=e978]:
+              - /url: "#services"
+          - listitem [ref=e979]:
+            - link "Data Engineering & Analytics" [ref=e980]:
+              - /url: "#services"
+          - listitem [ref=e981]:
+            - link "Cybersecurity & Compliance" [ref=e982]:
+              - /url: "#services"
+          - listitem [ref=e983]:
+            - link "Digital Transformation" [ref=e984]:
+              - /url: "#services"
+          - listitem [ref=e985]:
+            - link "Technical Consulting" [ref=e986]:
+              - /url: "#services"
+      - generic [ref=e987]:
+        - heading "Solutions" [level=3] [ref=e988]
+        - list [ref=e989]:
+          - listitem [ref=e990]:
+            - link "E-Commerce Solutions" [ref=e991]:
+              - /url: "#solutions"
+          - listitem [ref=e992]:
+            - link "Healthcare Systems" [ref=e993]:
+              - /url: "#solutions"
+          - listitem [ref=e994]:
+            - link "Financial Technology" [ref=e995]:
+              - /url: "#solutions"
+          - listitem [ref=e996]:
+            - link "IoT Platforms" [ref=e997]:
+              - /url: "#solutions"
+          - listitem [ref=e998]:
+            - link "AI & Machine Learning" [ref=e999]:
+              - /url: "#solutions"
+          - listitem [ref=e1000]:
+            - link "Legacy Modernization" [ref=e1001]:
+              - /url: "#solutions"
+      - generic [ref=e1002]:
+        - heading "Company" [level=3] [ref=e1003]
+        - list [ref=e1004]:
+          - listitem [ref=e1005]:
+            - link "About Us" [ref=e1006]:
+              - /url: "#about"
+          - listitem [ref=e1007]:
+            - link "Our Team" [ref=e1008]:
+              - /url: "#about"
+          - listitem [ref=e1009]:
+            - link "Case Studies" [ref=e1010]:
+              - /url: "#case-studies"
+          - listitem [ref=e1011]:
+            - link "Careers" [ref=e1012]:
+              - /url: "#careers"
+          - listitem [ref=e1013]:
+            - link "Blog" [ref=e1014]:
+              - /url: "#blog"
+          - listitem [ref=e1015]:
+            - link "Contact" [ref=e1016]:
+              - /url: "#contact"
+      - generic [ref=e1017]:
+        - heading "Resources" [level=3] [ref=e1018]
+        - list [ref=e1019]:
+          - listitem [ref=e1020]:
+            - link "Documentation" [ref=e1021]:
+              - /url: "#docs"
+          - listitem [ref=e1022]:
+            - link "API Reference" [ref=e1023]:
+              - /url: "#api"
+          - listitem [ref=e1024]:
+            - link "Whitepapers" [ref=e1025]:
+              - /url: "#whitepapers"
+          - listitem [ref=e1026]:
+            - link "Webinars" [ref=e1027]:
+              - /url: "#webinars"
+          - listitem [ref=e1028]:
+            - link "Support Center" [ref=e1029]:
+              - /url: "#support"
+          - listitem [ref=e1030]:
+            - link "Privacy Policy" [ref=e1031]:
+              - /url: "#privacy"
+    - generic [ref=e1034]:
+      - heading "Stay Updated with Our Latest Insights" [level=3] [ref=e1035]
+      - paragraph [ref=e1036]: Get the latest industry insights, technology trends, and company updates delivered to your inbox.
+      - generic [ref=e1037]:
+        - textbox "Enter your email" [ref=e1038]
+        - button "Subscribe" [ref=e1039] [cursor=pointer]
+    - generic [ref=e1042]:
+      - generic [ref=e1043]: © 2024 Kingsmen Consultancy. All rights reserved.
+      - generic [ref=e1044]:
+        - link "Privacy Policy" [ref=e1045]:
+          - /url: "#privacy"
+        - link "Terms of Service" [ref=e1046]:
+          - /url: "#terms"
+        - link "Cookie Policy" [ref=e1047]:
+          - /url: "#cookies"
+      - button [ref=e1048] [cursor=pointer]:
+        - img [ref=e1049] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e1056] [cursor=pointer]:
+    - img [ref=e1057] [cursor=pointer]
+  - alert [ref=e1062]
+```
