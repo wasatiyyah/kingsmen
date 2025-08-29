@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
 import Button from '../ui/Button';
+import Logo from '../ui/Logo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,17 +69,7 @@ const Header: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
-              <span className="text-xl md:text-2xl font-bold text-blue-600">
-                Kingsmen
-              </span>
-              <span className="text-xl md:text-2xl font-light text-gray-600">
-                Consultancy
-              </span>
-            </div>
+            <Logo size="md" showText={true} />
           </motion.div>
 
           {/* Desktop Navigation */}
