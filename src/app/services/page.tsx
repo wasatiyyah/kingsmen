@@ -1,270 +1,270 @@
-&apos;use client&apos;;
+'use client';
 
-import React, { useState } from &apos;react&apos;;
-import { motion } from &apos;framer-motion&apos;;
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { 
   Code, Cloud, Database, Shield, Zap, Users, 
   ArrowRight, CheckCircle, Cpu, Globe, Lock, 
   Smartphone, Monitor, Server, GitBranch, Layers,
   TrendingUp, BarChart, Brain, Palette, Settings
-} from &apos;lucide-react&apos;;
-import Card from &apos;@/components/ui/Card&apos;;
-import Button from &apos;@/components/ui/Button&apos;;
+} from 'lucide-react';
+import Card from '@/components/ui/Card';
+import Button from '@/components/ui/Button';
 
 const ServicesPage: React.FC = () => {
   const [selectedService, setSelectedService] = useState(0);
 
   const services = [
     {
-      id: &apos;software-dev&apos;,
+      id: 'software-dev',
       icon: Code,
-      title: &apos;Custom Software Development&apos;,
-      tagline: &apos;Transforming Ideas into Powerful Digital Solutions&apos;,
-      description: &apos;We craft bespoke software solutions that perfectly align with your business objectives. Our full-stack development expertise spans from intuitive user interfaces to robust backend systems, ensuring seamless performance and scalability.&apos;,
+      title: 'Custom Software Development',
+      tagline: 'Transforming Ideas into Powerful Digital Solutions',
+      description: 'We craft bespoke software solutions that perfectly align with your business objectives. Our full-stack development expertise spans from intuitive user interfaces to robust backend systems, ensuring seamless performance and scalability.',
       features: [
         {
-          title: &apos;Web Application Development&apos;,
-          description: &apos;Modern, responsive web applications using React, Angular, Vue.js, and Next.js&apos;
+          title: 'Web Application Development',
+          description: 'Modern, responsive web applications using React, Angular, Vue.js, and Next.js'
         },
         {
-          title: &apos;Mobile App Development&apos;,
-          description: &apos;Native and cross-platform mobile apps for iOS and Android&apos;
+          title: 'Mobile App Development',
+          description: 'Native and cross-platform mobile apps for iOS and Android'
         },
         {
-          title: &apos;API Development & Integration&apos;,
-          description: &apos;RESTful and GraphQL APIs with seamless third-party integrations&apos;
+          title: 'API Development & Integration',
+          description: 'RESTful and GraphQL APIs with seamless third-party integrations'
         },
         {
-          title: &apos;Enterprise Software Solutions&apos;,
-          description: &apos;Large-scale systems designed for performance and reliability&apos;
+          title: 'Enterprise Software Solutions',
+          description: 'Large-scale systems designed for performance and reliability'
         },
         {
-          title: &apos;Legacy System Modernization&apos;,
-          description: &apos;Transform outdated systems into modern, efficient solutions&apos;
+          title: 'Legacy System Modernization',
+          description: 'Transform outdated systems into modern, efficient solutions'
         },
         {
-          title: &apos;SaaS Product Development&apos;,
-          description: &apos;End-to-end SaaS platform development with multi-tenancy&apos;
+          title: 'SaaS Product Development',
+          description: 'End-to-end SaaS platform development with multi-tenancy'
         }
       ],
-      technologies: [&apos;React&apos;, &apos;Node.js&apos;, &apos;Python&apos;, &apos;Java&apos;, &apos;.NET&apos;, &apos;Go&apos;, &apos;TypeScript&apos;, &apos;PostgreSQL&apos;, &apos;MongoDB&apos;],
+      technologies: ['React', 'Node.js', 'Python', 'Java', '.NET', 'Go', 'TypeScript', 'PostgreSQL', 'MongoDB'],
       process: [
-        &apos;Requirements Analysis&apos;,
-        &apos;Architecture Design&apos;,
-        &apos;Agile Development&apos;,
-        &apos;Quality Assurance&apos;,
-        &apos;Deployment&apos;,
-        &apos;Maintenance&apos;
+        'Requirements Analysis',
+        'Architecture Design',
+        'Agile Development',
+        'Quality Assurance',
+        'Deployment',
+        'Maintenance'
       ]
     },
     {
-      id: &apos;cloud-architecture&apos;,
+      id: 'cloud-architecture',
       icon: Cloud,
-      title: &apos;Cloud Architecture & Migration&apos;,
-      tagline: &apos;Scaling Your Business to the Cloud&apos;,
-      description: &apos;Navigate your cloud journey with confidence. We design, implement, and optimize cloud infrastructures that reduce costs, improve performance, and ensure business continuity across AWS, Azure, and Google Cloud Platform.&apos;,
+      title: 'Cloud Architecture & Migration',
+      tagline: 'Scaling Your Business to the Cloud',
+      description: 'Navigate your cloud journey with confidence. We design, implement, and optimize cloud infrastructures that reduce costs, improve performance, and ensure business continuity across AWS, Azure, and Google Cloud Platform.',
       features: [
         {
-          title: &apos;Cloud Strategy & Consulting&apos;,
-          description: &apos;Comprehensive cloud adoption roadmap tailored to your business&apos;
+          title: 'Cloud Strategy & Consulting',
+          description: 'Comprehensive cloud adoption roadmap tailored to your business'
         },
         {
-          title: &apos;Cloud Migration Services&apos;,
-          description: &apos;Seamless migration of applications, data, and infrastructure&apos;
+          title: 'Cloud Migration Services',
+          description: 'Seamless migration of applications, data, and infrastructure'
         },
         {
-          title: &apos;Multi-Cloud Architecture&apos;,
-          description: &apos;Leverage the best of AWS, Azure, and GCP&apos;
+          title: 'Multi-Cloud Architecture',
+          description: 'Leverage the best of AWS, Azure, and GCP'
         },
         {
-          title: &apos;Kubernetes & Containerization&apos;,
-          description: &apos;Container orchestration for scalable microservices&apos;
+          title: 'Kubernetes & Containerization',
+          description: 'Container orchestration for scalable microservices'
         },
         {
-          title: &apos;Serverless Architecture&apos;,
-          description: &apos;Cost-effective serverless solutions with AWS Lambda, Azure Functions&apos;
+          title: 'Serverless Architecture',
+          description: 'Cost-effective serverless solutions with AWS Lambda, Azure Functions'
         },
         {
-          title: &apos;Cloud Cost Optimization&apos;,
-          description: &apos;Reduce cloud spending by up to 40% with our optimization strategies&apos;
+          title: 'Cloud Cost Optimization',
+          description: 'Reduce cloud spending by up to 40% with our optimization strategies'
         }
       ],
-      technologies: [&apos;AWS&apos;, &apos;Azure&apos;, &apos;GCP&apos;, &apos;Kubernetes&apos;, &apos;Docker&apos;, &apos;Terraform&apos;, &apos;CloudFormation&apos;, &apos;Ansible&apos;],
+      technologies: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Terraform', 'CloudFormation', 'Ansible'],
       process: [
-        &apos;Cloud Assessment&apos;,
-        &apos;Architecture Design&apos;,
-        &apos;Migration Planning&apos;,
-        &apos;Implementation&apos;,
-        &apos;Optimization&apos;,
-        &apos;Monitoring&apos;
+        'Cloud Assessment',
+        'Architecture Design',
+        'Migration Planning',
+        'Implementation',
+        'Optimization',
+        'Monitoring'
       ]
     },
     {
-      id: &apos;data-engineering&apos;,
+      id: 'data-engineering',
       icon: Database,
-      title: &apos;Data Engineering & Analytics&apos;,
-      tagline: &apos;Turn Data into Your Competitive Advantage&apos;,
-      description: &apos;Unlock the power of your data with our comprehensive data engineering and analytics solutions. We build robust data pipelines, create insightful dashboards, and implement machine learning models that drive informed decision-making.&apos;,
+      title: 'Data Engineering & Analytics',
+      tagline: 'Turn Data into Your Competitive Advantage',
+      description: 'Unlock the power of your data with our comprehensive data engineering and analytics solutions. We build robust data pipelines, create insightful dashboards, and implement machine learning models that drive informed decision-making.',
       features: [
         {
-          title: &apos;Data Pipeline Development&apos;,
-          description: &apos;ETL/ELT pipelines for real-time and batch data processing&apos;
+          title: 'Data Pipeline Development',
+          description: 'ETL/ELT pipelines for real-time and batch data processing'
         },
         {
-          title: &apos;Data Warehouse Solutions&apos;,
-          description: &apos;Modern data warehouses with Snowflake, Redshift, BigQuery&apos;
+          title: 'Data Warehouse Solutions',
+          description: 'Modern data warehouses with Snowflake, Redshift, BigQuery'
         },
         {
-          title: &apos;Business Intelligence&apos;,
-          description: &apos;Interactive dashboards with Tableau, Power BI, and Looker&apos;
+          title: 'Business Intelligence',
+          description: 'Interactive dashboards with Tableau, Power BI, and Looker'
         },
         {
-          title: &apos;Machine Learning Engineering&apos;,
-          description: &apos;Production-ready ML models and MLOps pipelines&apos;
+          title: 'Machine Learning Engineering',
+          description: 'Production-ready ML models and MLOps pipelines'
         },
         {
-          title: &apos;Real-time Analytics&apos;,
-          description: &apos;Stream processing with Kafka, Spark, and Flink&apos;
+          title: 'Real-time Analytics',
+          description: 'Stream processing with Kafka, Spark, and Flink'
         },
         {
-          title: &apos;Data Governance&apos;,
-          description: &apos;Ensure data quality, security, and compliance&apos;
+          title: 'Data Governance',
+          description: 'Ensure data quality, security, and compliance'
         }
       ],
-      technologies: [&apos;Python&apos;, &apos;Spark&apos;, &apos;Airflow&apos;, &apos;Snowflake&apos;, &apos;Databricks&apos;, &apos;TensorFlow&apos;, &apos;PyTorch&apos;, &apos;Kafka&apos;],
+      technologies: ['Python', 'Spark', 'Airflow', 'Snowflake', 'Databricks', 'TensorFlow', 'PyTorch', 'Kafka'],
       process: [
-        &apos;Data Assessment&apos;,
-        &apos;Pipeline Design&apos;,
-        &apos;Implementation&apos;,
-        &apos;Model Development&apos;,
-        &apos;Deployment&apos;,
-        &apos;Monitoring&apos;
+        'Data Assessment',
+        'Pipeline Design',
+        'Implementation',
+        'Model Development',
+        'Deployment',
+        'Monitoring'
       ]
     },
     {
-      id: &apos;cybersecurity&apos;,
+      id: 'cybersecurity',
       icon: Shield,
-      title: &apos;Cybersecurity & Compliance&apos;,
-      tagline: &apos;Protecting Your Digital Assets&apos;,
-      description: &apos;Safeguard your business with enterprise-grade security solutions. Our comprehensive cybersecurity services protect against evolving threats while ensuring compliance with industry regulations and standards.&apos;,
+      title: 'Cybersecurity & Compliance',
+      tagline: 'Protecting Your Digital Assets',
+      description: 'Safeguard your business with enterprise-grade security solutions. Our comprehensive cybersecurity services protect against evolving threats while ensuring compliance with industry regulations and standards.',
       features: [
         {
-          title: &apos;Security Audits & Assessments&apos;,
-          description: &apos;Comprehensive vulnerability assessments and penetration testing&apos;
+          title: 'Security Audits & Assessments',
+          description: 'Comprehensive vulnerability assessments and penetration testing'
         },
         {
-          title: &apos;Cloud Security&apos;,
-          description: &apos;Secure cloud architectures with zero-trust principles&apos;
+          title: 'Cloud Security',
+          description: 'Secure cloud architectures with zero-trust principles'
         },
         {
-          title: &apos;Compliance Implementation&apos;,
-          description: &apos;GDPR, HIPAA, SOC 2, ISO 27001 compliance solutions&apos;
+          title: 'Compliance Implementation',
+          description: 'GDPR, HIPAA, SOC 2, ISO 27001 compliance solutions'
         },
         {
-          title: &apos;Identity & Access Management&apos;,
-          description: &apos;Implement SSO, MFA, and privileged access management&apos;
+          title: 'Identity & Access Management',
+          description: 'Implement SSO, MFA, and privileged access management'
         },
         {
-          title: &apos;Security Operations Center&apos;,
-          description: &apos;24/7 threat monitoring and incident response&apos;
+          title: 'Security Operations Center',
+          description: '24/7 threat monitoring and incident response'
         },
         {
-          title: &apos;DevSecOps Integration&apos;,
-          description: &apos;Embed security into your CI/CD pipeline&apos;
+          title: 'DevSecOps Integration',
+          description: 'Embed security into your CI/CD pipeline'
         }
       ],
-      technologies: [&apos;SIEM&apos;, &apos;WAF&apos;, &apos;IDS/IPS&apos;, &apos;OAuth&apos;, &apos;SAML&apos;, &apos;Vault&apos;, &apos;Sentinel&apos;, &apos;CrowdStrike&apos;],
+      technologies: ['SIEM', 'WAF', 'IDS/IPS', 'OAuth', 'SAML', 'Vault', 'Sentinel', 'CrowdStrike'],
       process: [
-        &apos;Risk Assessment&apos;,
-        &apos;Security Architecture&apos;,
-        &apos;Implementation&apos;,
-        &apos;Testing&apos;,
-        &apos;Monitoring&apos;,
-        &apos;Incident Response&apos;
+        'Risk Assessment',
+        'Security Architecture',
+        'Implementation',
+        'Testing',
+        'Monitoring',
+        'Incident Response'
       ]
     },
     {
-      id: &apos;digital-transformation&apos;,
+      id: 'digital-transformation',
       icon: Zap,
-      title: &apos;Digital Transformation&apos;,
-      tagline: &apos;Accelerate Your Digital Evolution&apos;,
-      description: &apos;Lead your industry with comprehensive digital transformation strategies. We help organizations reimagine their business models, optimize operations, and create exceptional digital experiences that drive growth.&apos;,
+      title: 'Digital Transformation',
+      tagline: 'Accelerate Your Digital Evolution',
+      description: 'Lead your industry with comprehensive digital transformation strategies. We help organizations reimagine their business models, optimize operations, and create exceptional digital experiences that drive growth.',
       features: [
         {
-          title: &apos;Digital Strategy Consulting&apos;,
-          description: &apos;Roadmap for digital innovation and competitive advantage&apos;
+          title: 'Digital Strategy Consulting',
+          description: 'Roadmap for digital innovation and competitive advantage'
         },
         {
-          title: &apos;Process Automation&apos;,
-          description: &apos;RPA and intelligent automation to streamline operations&apos;
+          title: 'Process Automation',
+          description: 'RPA and intelligent automation to streamline operations'
         },
         {
-          title: &apos;Customer Experience Design&apos;,
-          description: &apos;Omnichannel experiences that delight customers&apos;
+          title: 'Customer Experience Design',
+          description: 'Omnichannel experiences that delight customers'
         },
         {
-          title: &apos;IoT Solutions&apos;,
-          description: &apos;Connected devices and smart systems integration&apos;
+          title: 'IoT Solutions',
+          description: 'Connected devices and smart systems integration'
         },
         {
-          title: &apos;Blockchain Development&apos;,
-          description: &apos;Decentralized applications and smart contracts&apos;
+          title: 'Blockchain Development',
+          description: 'Decentralized applications and smart contracts'
         },
         {
-          title: &apos;Change Management&apos;,
-          description: &apos;Guide your organization through digital adoption&apos;
+          title: 'Change Management',
+          description: 'Guide your organization through digital adoption'
         }
       ],
-      technologies: [&apos;IoT&apos;, &apos;Blockchain&apos;, &apos;RPA&apos;, &apos;AI/ML&apos;, &apos;AR/VR&apos;, &apos;Edge Computing&apos;, &apos;Quantum&apos;, &apos;5G&apos;],
+      technologies: ['IoT', 'Blockchain', 'RPA', 'AI/ML', 'AR/VR', 'Edge Computing', 'Quantum', '5G'],
       process: [
-        &apos;Digital Maturity Assessment&apos;,
-        &apos;Strategy Development&apos;,
-        &apos;Pilot Projects&apos;,
-        &apos;Scale Implementation&apos;,
-        &apos;Change Management&apos;,
-        &apos;Continuous Innovation&apos;
+        'Digital Maturity Assessment',
+        'Strategy Development',
+        'Pilot Projects',
+        'Scale Implementation',
+        'Change Management',
+        'Continuous Innovation'
       ]
     },
     {
-      id: &apos;devops&apos;,
+      id: 'devops',
       icon: GitBranch,
-      title: &apos;DevOps & Site Reliability&apos;,
-      tagline: &apos;Accelerate Delivery, Ensure Reliability&apos;,
-      description: &apos;Transform your software delivery with modern DevOps practices. We implement CI/CD pipelines, infrastructure as code, and monitoring solutions that accelerate deployment while maintaining rock-solid reliability.&apos;,
+      title: 'DevOps & Site Reliability',
+      tagline: 'Accelerate Delivery, Ensure Reliability',
+      description: 'Transform your software delivery with modern DevOps practices. We implement CI/CD pipelines, infrastructure as code, and monitoring solutions that accelerate deployment while maintaining rock-solid reliability.',
       features: [
         {
-          title: &apos;CI/CD Pipeline Development&apos;,
-          description: &apos;Automated build, test, and deployment pipelines&apos;
+          title: 'CI/CD Pipeline Development',
+          description: 'Automated build, test, and deployment pipelines'
         },
         {
-          title: &apos;Infrastructure as Code&apos;,
-          description: &apos;Terraform, CloudFormation, and Pulumi implementations&apos;
+          title: 'Infrastructure as Code',
+          description: 'Terraform, CloudFormation, and Pulumi implementations'
         },
         {
-          title: &apos;Container Orchestration&apos;,
-          description: &apos;Kubernetes cluster setup and management&apos;
+          title: 'Container Orchestration',
+          description: 'Kubernetes cluster setup and management'
         },
         {
-          title: &apos;Monitoring & Observability&apos;,
-          description: &apos;Comprehensive monitoring with Prometheus, Grafana, ELK&apos;
+          title: 'Monitoring & Observability',
+          description: 'Comprehensive monitoring with Prometheus, Grafana, ELK'
         },
         {
-          title: &apos;Site Reliability Engineering&apos;,
-          description: &apos;Achieve 99.99% uptime with SRE practices&apos;
+          title: 'Site Reliability Engineering',
+          description: 'Achieve 99.99% uptime with SRE practices'
         },
         {
-          title: &apos;GitOps Implementation&apos;,
-          description: &apos;Declarative infrastructure and application delivery&apos;
+          title: 'GitOps Implementation',
+          description: 'Declarative infrastructure and application delivery'
         }
       ],
-      technologies: [&apos;Jenkins&apos;, &apos;GitHub Actions&apos;, &apos;GitLab CI&apos;, &apos;ArgoCD&apos;, &apos;Prometheus&apos;, &apos;Grafana&apos;, &apos;ELK Stack&apos;, &apos;Datadog&apos;],
+      technologies: ['Jenkins', 'GitHub Actions', 'GitLab CI', 'ArgoCD', 'Prometheus', 'Grafana', 'ELK Stack', 'Datadog'],
       process: [
-        &apos;Current State Analysis&apos;,
-        &apos;DevOps Strategy&apos;,
-        &apos;Tool Selection&apos;,
-        &apos;Pipeline Implementation&apos;,
-        &apos;Automation&apos;,
-        &apos;Continuous Improvement&apos;
+        'Current State Analysis',
+        'DevOps Strategy',
+        'Tool Selection',
+        'Pipeline Implementation',
+        'Automation',
+        'Continuous Improvement'
       ]
     }
   ];
@@ -272,68 +272,68 @@ const ServicesPage: React.FC = () => {
   const methodologies = [
     {
       icon: Layers,
-      title: &apos;Agile Development&apos;,
-      description: &apos;Iterative development with regular feedback and continuous improvement&apos;
+      title: 'Agile Development',
+      description: 'Iterative development with regular feedback and continuous improvement'
     },
     {
       icon: GitBranch,
-      title: &apos;DevOps Integration&apos;,
-      description: &apos;Seamless collaboration between development and operations teams&apos;
+      title: 'DevOps Integration',
+      description: 'Seamless collaboration between development and operations teams'
     },
     {
       icon: Brain,
-      title: &apos;Design Thinking&apos;,
-      description: &apos;Human-centered approach to innovation and problem-solving&apos;
+      title: 'Design Thinking',
+      description: 'Human-centered approach to innovation and problem-solving'
     },
     {
       icon: TrendingUp,
-      title: &apos;Continuous Delivery&apos;,
-      description: &apos;Rapid, reliable software releases through automation&apos;
+      title: 'Continuous Delivery',
+      description: 'Rapid, reliable software releases through automation'
     }
   ];
 
   return (
-    <div className=&quot;min-h-screen&quot;>
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className=&quot;relative pt-32 pb-20 overflow-hidden&quot;>
-        <div className=&quot;absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50&quot;></div>
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
         
         {/* Animated Background */}
-        <div className=&quot;absolute inset-0&quot;>
+        <div className="absolute inset-0">
           <motion.div
-            className=&quot;absolute top-20 right-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50&quot;
+            className="absolute top-20 right-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"
             animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
             transition={{ duration: 25, repeat: Infinity }}
           />
           <motion.div
-            className=&quot;absolute bottom-20 left-10 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50&quot;
+            className="absolute bottom-20 left-10 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"
             animate={{ scale: [1.2, 1, 1.2], rotate: [0, -90, 0] }}
             transition={{ duration: 30, repeat: Infinity }}
           />
         </div>
 
-        <div className=&quot;container-custom relative z-10&quot;>
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className=&quot;text-center max-w-4xl mx-auto&quot;
+            className="text-center max-w-4xl mx-auto"
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className=&quot;inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6&quot;
+              className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6"
             >
-              <Zap className=&quot;w-4 h-4 mr-2&quot; />
+              <Zap className="w-4 h-4 mr-2" />
               Our Services
             </motion.div>
 
-            <h1 className=&quot;heading-1 text-gray-900 mb-6&quot;>
-              World-Class <span className=&quot;bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent&quot;>Technology Solutions</span> for Modern Businesses
+            <h1 className="heading-1 text-gray-900 mb-6">
+              World-Class <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Technology Solutions</span> for Modern Businesses
             </h1>
             
-            <p className=&quot;body-large text-gray-600 mb-8&quot;>
+            <p className="body-large text-gray-600 mb-8">
               From custom software development to cloud architecture and digital transformation, 
               we deliver comprehensive solutions that drive innovation, efficiency, and growth.
             </p>
@@ -342,23 +342,23 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* Service Tabs Section */}
-      <section className=&quot;section-padding bg-white&quot;>
-        <div className=&quot;container-custom&quot;>
+      <section className="section-padding bg-white">
+        <div className="container-custom">
           {/* Service Navigation */}
-          <div className=&quot;flex flex-wrap justify-center gap-4 mb-12&quot;>
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
             {services.map((service, index) => (
               <motion.button
                 key={service.id}
                 onClick={() => setSelectedService(index)}
                 className={`px-6 py-3 rounded-xl font-medium transition-all ${
                   selectedService === index
-                    ? &apos;bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg&apos;
-                    : &apos;bg-gray-100 text-gray-700 hover:bg-gray-200&apos;
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <service.icon className=&quot;w-5 h-5 inline mr-2&quot; />
+                <service.icon className="w-5 h-5 inline mr-2" />
                 {service.title}
               </motion.button>
             ))}
@@ -371,28 +371,28 @@ const ServicesPage: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className=&quot;grid lg:grid-cols-2 gap-12 mb-16&quot;>
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
               <div>
-                <h2 className=&quot;heading-2 text-gray-900 mb-4&quot;>
+                <h2 className="heading-2 text-gray-900 mb-4">
                   {services[selectedService].title}
                 </h2>
-                <p className=&quot;text-xl text-blue-600 mb-6&quot;>
+                <p className="text-xl text-blue-600 mb-6">
                   {services[selectedService].tagline}
                 </p>
-                <p className=&quot;text-gray-600 leading-relaxed mb-8&quot;>
+                <p className="text-gray-600 leading-relaxed mb-8">
                   {services[selectedService].description}
                 </p>
 
                 {/* Process Steps */}
-                <div className=&quot;bg-gray-50 rounded-2xl p-6&quot;>
-                  <h4 className=&quot;heading-4 text-gray-900 mb-4&quot;>Our Process</h4>
-                  <div className=&quot;space-y-3&quot;>
+                <div className="bg-gray-50 rounded-2xl p-6">
+                  <h4 className="heading-4 text-gray-900 mb-4">Our Process</h4>
+                  <div className="space-y-3">
                     {services[selectedService].process.map((step, index) => (
-                      <div key={step} className=&quot;flex items-center&quot;>
-                        <div className=&quot;w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3&quot;>
+                      <div key={step} className="flex items-center">
+                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">
                           {index + 1}
                         </div>
-                        <span className=&quot;text-gray-700&quot;>{step}</span>
+                        <span className="text-gray-700">{step}</span>
                       </div>
                     ))}
                   </div>
@@ -401,27 +401,27 @@ const ServicesPage: React.FC = () => {
 
               <div>
                 {/* Features */}
-                <h4 className=&quot;heading-4 text-gray-900 mb-6&quot;>Key Capabilities</h4>
-                <div className=&quot;space-y-4 mb-8&quot;>
+                <h4 className="heading-4 text-gray-900 mb-6">Key Capabilities</h4>
+                <div className="space-y-4 mb-8">
                   {services[selectedService].features.map((feature) => (
-                    <Card key={feature.title} className=&quot;p-4&quot;>
-                      <h5 className=&quot;font-semibold text-gray-900 mb-2 flex items-center&quot;>
-                        <CheckCircle className=&quot;w-5 h-5 text-green-500 mr-2&quot; />
+                    <Card key={feature.title} className="p-4">
+                      <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                         {feature.title}
                       </h5>
-                      <p className=&quot;text-gray-600 text-sm ml-7&quot;>{feature.description}</p>
+                      <p className="text-gray-600 text-sm ml-7">{feature.description}</p>
                     </Card>
                   ))}
                 </div>
 
                 {/* Technologies */}
-                <div className=&quot;bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6&quot;>
-                  <h4 className=&quot;heading-5 text-gray-900 mb-4&quot;>Technologies We Use</h4>
-                  <div className=&quot;flex flex-wrap gap-2&quot;>
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6">
+                  <h4 className="heading-5 text-gray-900 mb-4">Technologies We Use</h4>
+                  <div className="flex flex-wrap gap-2">
                     {services[selectedService].technologies.map((tech) => (
                       <span
                         key={tech}
-                        className=&quot;px-3 py-1 bg-white rounded-lg text-sm font-medium text-gray-700 shadow-sm&quot;
+                        className="px-3 py-1 bg-white rounded-lg text-sm font-medium text-gray-700 shadow-sm"
                       >
                         {tech}
                       </span>
@@ -432,8 +432,8 @@ const ServicesPage: React.FC = () => {
             </div>
 
             {/* CTA */}
-            <div className=&quot;text-center&quot;>
-              <Button variant=&quot;primary&quot; size=&quot;lg&quot; icon={<ArrowRight className=&quot;w-5 h-5&quot; />} iconPosition=&quot;right&quot;>
+            <div className="text-center">
+              <Button variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right">
                 Get Started with {services[selectedService].title}
               </Button>
             </div>
@@ -442,24 +442,24 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* Our Methodology */}
-      <section className=&quot;section-padding bg-gray-50&quot;>
-        <div className=&quot;container-custom&quot;>
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className=&quot;text-center mb-16&quot;
+            className="text-center mb-16"
           >
-            <h2 className=&quot;heading-2 text-gray-900 mb-6&quot;>
-              Our <span className=&quot;bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent&quot;>Methodology</span>
+            <h2 className="heading-2 text-gray-900 mb-6">
+              Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Methodology</span>
             </h2>
-            <p className=&quot;body-large text-gray-600 max-w-3xl mx-auto&quot;>
+            <p className="body-large text-gray-600 max-w-3xl mx-auto">
               We follow industry best practices and proven methodologies to ensure project success
             </p>
           </motion.div>
 
-          <div className=&quot;grid md:grid-cols-2 lg:grid-cols-4 gap-8&quot;>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {methodologies.map((method, index) => (
               <motion.div
                 key={method.title}
@@ -468,12 +468,12 @@ const ServicesPage: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className=&quot;p-6 h-full text-center hover:shadow-xl transition-shadow&quot;>
-                  <div className=&quot;w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4&quot;>
-                    <method.icon className=&quot;w-8 h-8 text-blue-600&quot; />
+                <Card className="p-6 h-full text-center hover:shadow-xl transition-shadow">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <method.icon className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h4 className=&quot;heading-5 text-gray-900 mb-3&quot;>{method.title}</h4>
-                  <p className=&quot;text-gray-600 text-sm&quot;>{method.description}</p>
+                  <h4 className="heading-5 text-gray-900 mb-3">{method.title}</h4>
+                  <p className="text-gray-600 text-sm">{method.description}</p>
                 </Card>
               </motion.div>
             ))}
@@ -482,37 +482,37 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* Technology Stack Preview */}
-      <section className=&quot;section-padding bg-white&quot;>
-        <div className=&quot;container-custom&quot;>
+      <section className="section-padding bg-white">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className=&quot;text-center mb-16&quot;
+            className="text-center mb-16"
           >
-            <h2 className=&quot;heading-2 text-gray-900 mb-6&quot;>
-              Powered by <span className=&quot;bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent&quot;>Leading Technologies</span>
+            <h2 className="heading-2 text-gray-900 mb-6">
+              Powered by <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Leading Technologies</span>
             </h2>
-            <p className=&quot;body-large text-gray-600 max-w-3xl mx-auto&quot;>
+            <p className="body-large text-gray-600 max-w-3xl mx-auto">
               We leverage the most advanced tools and frameworks to deliver exceptional results
             </p>
           </motion.div>
 
-          <div className=&quot;grid grid-cols-3 md:grid-cols-6 gap-8&quot;>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
             {[
-              { name: &apos;AWS&apos;, icon: Cloud },
-              { name: &apos;Azure&apos;, icon: Cloud },
-              { name: &apos;Google Cloud&apos;, icon: Cloud },
-              { name: &apos;React&apos;, icon: Code },
-              { name: &apos;Python&apos;, icon: Code },
-              { name: &apos;Docker&apos;, icon: Server },
-              { name: &apos;Kubernetes&apos;, icon: Server },
-              { name: &apos;TensorFlow&apos;, icon: Brain },
-              { name: &apos;Node.js&apos;, icon: Code },
-              { name: &apos;PostgreSQL&apos;, icon: Database },
-              { name: &apos;MongoDB&apos;, icon: Database },
-              { name: &apos;Jenkins&apos;, icon: GitBranch }
+              { name: 'AWS', icon: Cloud },
+              { name: 'Azure', icon: Cloud },
+              { name: 'Google Cloud', icon: Cloud },
+              { name: 'React', icon: Code },
+              { name: 'Python', icon: Code },
+              { name: 'Docker', icon: Server },
+              { name: 'Kubernetes', icon: Server },
+              { name: 'TensorFlow', icon: Brain },
+              { name: 'Node.js', icon: Code },
+              { name: 'PostgreSQL', icon: Database },
+              { name: 'MongoDB', icon: Database },
+              { name: 'Jenkins', icon: GitBranch }
             ].map((tech, index) => (
               <motion.div
                 key={tech.name}
@@ -520,12 +520,12 @@ const ServicesPage: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className=&quot;flex flex-col items-center&quot;
+                className="flex flex-col items-center"
               >
-                <div className=&quot;w-20 h-20 bg-gray-50 rounded-xl flex items-center justify-center mb-2 hover:shadow-lg transition-shadow&quot;>
-                  <tech.icon className=&quot;w-10 h-10 text-gray-600&quot; />
+                <div className="w-20 h-20 bg-gray-50 rounded-xl flex items-center justify-center mb-2 hover:shadow-lg transition-shadow">
+                  <tech.icon className="w-10 h-10 text-gray-600" />
                 </div>
-                <span className=&quot;text-sm text-gray-600&quot;>{tech.name}</span>
+                <span className="text-sm text-gray-600">{tech.name}</span>
               </motion.div>
             ))}
           </div>
@@ -533,25 +533,25 @@ const ServicesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className=&quot;section-padding bg-gradient-to-br from-blue-600 to-purple-600 text-white&quot;>
-        <div className=&quot;container-custom text-center&quot;>
+      <section className="section-padding bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+        <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className=&quot;heading-2 text-white mb-6&quot;>
+            <h2 className="heading-2 text-white mb-6">
               Ready to Transform Your Business?
             </h2>
-            <p className=&quot;body-large text-white/90 max-w-3xl mx-auto mb-8&quot;>
-              Let&apos;s discuss how our services can help you achieve your goals and drive measurable results
+            <p className="body-large text-white/90 max-w-3xl mx-auto mb-8">
+              Let's discuss how our services can help you achieve your goals and drive measurable results
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button variant=&quot;accent&quot; size=&quot;lg&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="accent" size="lg">
                 Schedule Free Consultation
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; className=&quot;bg-white/10 border-white/20 text-white hover:bg-white hover:text-blue-600&quot;>
+              <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white hover:text-blue-600">
                 Download Service Catalog
               </Button>
             </div>
