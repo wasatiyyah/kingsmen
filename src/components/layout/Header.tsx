@@ -3,12 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
+import ThemeToggle from '../ui/ThemeToggle';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,25 +19,6 @@ const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDarkMode(true);
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    if (isDarkMode) {
-      document.documentElement.removeAttribute('data-theme');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -100,14 +81,7 @@ const Header: React.FC = () => {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             {/* Dark Mode Toggle */}
-            <motion.button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-200"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </motion.button>
+            <ThemeToggle />
 
             {/* CTA Button */}
             <Button variant="primary" size="sm">
@@ -158,14 +132,9 @@ const Header: React.FC = () => {
                     <Button variant="primary" size="sm" className="w-full">
                       Get Started
                     </Button>
-                    <motion.button
-                      onClick={toggleDarkMode}
-                      className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-200 ml-4"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                    </motion.button>
+                    <div className="ml-4">
+                      <ThemeToggle />
+                    </div>
                   </div>
                 </div>
               </nav>
