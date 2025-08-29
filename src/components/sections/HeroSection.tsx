@@ -116,8 +116,8 @@ const HeroSection: React.FC = () => {
               <Button variant="primary" size="lg" icon={<ArrowRight className="w-5 h-5" />} iconPosition="right" onClick={openCalendly}>
                 Start Your Project
               </Button>
-              <Button variant="outline" size="lg" icon={<Play className="w-5 h-5" />} iconPosition="left">
-                Watch Demo
+              <Button variant="outline" size="lg" icon={<Play className="w-5 h-5" />} iconPosition="left" onClick={openCalendly}>
+                Schedule Consultation
               </Button>
             </motion.div>
 
