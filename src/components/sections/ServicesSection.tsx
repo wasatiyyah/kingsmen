@@ -2,13 +2,30 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Cloud, Database, Shield, Zap, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { Code, Cloud, Database, Shield, Zap, Users, ArrowRight, CheckCircle, Smartphone } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
+import Link from 'next/link';
 
 const ServicesSection: React.FC = () => {
   const services = [
     {
+      id: 'web-mobile-app',
+      icon: Smartphone,
+      title: 'Web & Mobile Application Development',
+      description: 'Beautiful, responsive applications for web and mobile platforms with exceptional user experiences.',
+      features: [
+        'Progressive Web Apps (PWA)',
+        'iOS & Android Native Apps',
+        'Cross-Platform Development',
+        'Responsive Web Design'
+      ],
+      color: 'from-green-500 to-green-600',
+      bgColor: 'bg-green-50',
+      iconColor: 'text-green-600'
+    },
+    {
+      id: 'software-dev',
       icon: Code,
       title: 'Custom Software Development',
       description: 'Tailored software solutions built with cutting-edge technologies to meet your unique business requirements.',
@@ -23,6 +40,7 @@ const ServicesSection: React.FC = () => {
       iconColor: 'text-blue-600'
     },
     {
+      id: 'cloud-architecture',
       icon: Cloud,
       title: 'Cloud Architecture & Migration',
       description: 'Expert cloud solutions that optimize performance, reduce costs, and ensure scalability for your business.',
@@ -37,6 +55,7 @@ const ServicesSection: React.FC = () => {
       iconColor: 'text-purple-600'
     },
     {
+      id: 'data-engineering',
       icon: Database,
       title: 'Data Engineering & Analytics',
       description: 'Transform your data into actionable insights with our advanced analytics and data engineering solutions.',
@@ -51,6 +70,7 @@ const ServicesSection: React.FC = () => {
       iconColor: 'text-green-600'
     },
     {
+      id: 'cybersecurity',
       icon: Shield,
       title: 'Cybersecurity & Compliance',
       description: 'Protect your digital assets with enterprise-grade security solutions and compliance frameworks.',
@@ -65,6 +85,7 @@ const ServicesSection: React.FC = () => {
       iconColor: 'text-red-600'
     },
     {
+      id: 'digital-transformation',
       icon: Zap,
       title: 'Digital Transformation',
       description: 'Accelerate your digital journey with strategic consulting and technology implementation.',
@@ -79,6 +100,7 @@ const ServicesSection: React.FC = () => {
       iconColor: 'text-yellow-600'
     },
     {
+      id: 'technical-consulting',
       icon: Users,
       title: 'Technical Consulting',
       description: 'Expert guidance on technology decisions, architecture reviews, and strategic planning.',
@@ -197,15 +219,17 @@ const ServicesSection: React.FC = () => {
                 </ul>
 
                 {/* CTA Button */}
-                <Button
-                  variant="outline"
-                  size="sm"
-                  icon={<ArrowRight className="w-4 h-4" />}
-                  iconPosition="right"
-                  className="w-full"
-                >
-                  Learn More
-                </Button>
+                <Link href={`/services?service=${service.id}`}>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    icon={<ArrowRight className="w-4 h-4" />}
+                    iconPosition="right"
+                    className="w-full"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
             </motion.div>
           ))}

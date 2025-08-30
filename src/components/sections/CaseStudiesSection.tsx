@@ -5,11 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ExternalLink, Star, TrendingUp, Users, Clock, CheckCircle } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
+import Link from 'next/link';
 import { useCalendly } from '@/contexts/CalendlyContext';
 
 const CaseStudiesSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const { openCalendly } = useCalendly();
+
+  // Map case study categories to service IDs
+  const categoryToServiceMap: { [key: string]: string } = {
+    'software': 'software-dev',
+    'cloud': 'cloud-architecture',
+    'digital': 'digital-transformation'
+  };
 
   const categories = [
     { id: 'all', name: 'All Projects' },
@@ -349,9 +357,11 @@ const CaseStudiesSection: React.FC = () => {
                       </div>
                     </div>
 
-                    <Button variant="outline" size="sm" icon={<ArrowRight className="w-4 h-4" />} iconPosition="right" className="w-full">
-                      Learn More
-                    </Button>
+                    <Link href={`/services?service=${categoryToServiceMap[study.category] || 'software-dev'}`}>
+                      <Button variant="outline" size="sm" icon={<ArrowRight className="w-4 h-4" />} iconPosition="right" className="w-full">
+                        Learn More
+                      </Button>
+                    </Link>
                   </div>
                 </Card>
               </motion.div>

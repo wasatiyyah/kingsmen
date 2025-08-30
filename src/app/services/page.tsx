@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { 
   Code, Cloud, Database, Shield, Zap, Users, 
@@ -13,8 +14,51 @@ import Button from '@/components/ui/Button';
 
 const ServicesPage: React.FC = () => {
   const [selectedService, setSelectedService] = useState(0);
+  const searchParams = useSearchParams();
 
   const services = [
+    {
+      id: 'web-mobile-app',
+      icon: Smartphone,
+      title: 'Web & Mobile Application Development',
+      tagline: 'Beautiful, Responsive Applications for Every Platform',
+      description: 'Create stunning web and mobile applications that deliver exceptional user experiences. Our expert team builds responsive web apps and native mobile solutions that engage users and drive business growth across all devices and platforms.',
+      features: [
+        {
+          title: 'Progressive Web Apps (PWA)',
+          description: 'Fast, reliable web apps that work offline and feel like native apps'
+        },
+        {
+          title: 'iOS & Android Native Apps',
+          description: 'High-performance native mobile apps for Apple and Android devices'
+        },
+        {
+          title: 'Cross-Platform Development',
+          description: 'React Native and Flutter apps that work seamlessly across platforms'
+        },
+        {
+          title: 'Responsive Web Design',
+          description: 'Mobile-first web applications that adapt to any screen size'
+        },
+        {
+          title: 'E-commerce Platforms',
+          description: 'Complete online store solutions with payment integration'
+        },
+        {
+          title: 'App Store Deployment',
+          description: 'Full support for Apple App Store and Google Play Store submission'
+        }
+      ],
+      technologies: ['React', 'React Native', 'Flutter', 'Swift', 'Kotlin', 'Next.js', 'Vue.js', 'Angular', 'TypeScript'],
+      process: [
+        'UI/UX Design',
+        'Prototype Development',
+        'Frontend Development',
+        'Backend Integration',
+        'Testing & QA',
+        'Deployment & Support'
+      ]
+    },
     {
       id: 'software-dev',
       icon: Code,
@@ -266,8 +310,61 @@ const ServicesPage: React.FC = () => {
         'Automation',
         'Continuous Improvement'
       ]
+    },
+    {
+      id: 'technical-consulting',
+      icon: Users,
+      title: 'Technical Consulting',
+      tagline: 'Expert Guidance for Complex Technical Challenges',
+      description: 'Get strategic technical guidance from our experienced consultants. We help you make informed decisions about technology adoption, architecture design, and digital strategy to achieve your business objectives.',
+      features: [
+        {
+          title: 'Technology Strategy Consulting',
+          description: 'Strategic guidance on technology adoption and digital roadmaps'
+        },
+        {
+          title: 'Architecture Reviews',
+          description: 'Comprehensive assessment of your current technical architecture'
+        },
+        {
+          title: 'Performance Optimization',
+          description: 'Identify and resolve performance bottlenecks in your systems'
+        },
+        {
+          title: 'Vendor Selection',
+          description: 'Expert guidance on choosing the right technology partners'
+        },
+        {
+          title: 'Technical Due Diligence',
+          description: 'In-depth technical assessment for mergers and acquisitions'
+        },
+        {
+          title: 'CTO Advisory Services',
+          description: 'Strategic technology leadership for growing organizations'
+        }
+      ],
+      technologies: ['Architecture Design', 'Performance Analysis', 'Technology Assessment', 'Strategy Planning', 'Risk Management'],
+      process: [
+        'Current State Assessment',
+        'Requirements Analysis',
+        'Strategy Development',
+        'Recommendations',
+        'Implementation Planning',
+        'Ongoing Support'
+      ]
     }
   ];
+
+  // Handle URL parameter for direct navigation to service tabs
+  useEffect(() => {
+    const service = searchParams.get('service');
+    if (service) {
+      const index = services.findIndex(s => s.id === service);
+      if (index !== -1) {
+        setSelectedService(index);
+      }
+    }
+  }, [searchParams, services]);
 
   const methodologies = [
     {
