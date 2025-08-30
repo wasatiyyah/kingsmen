@@ -25,9 +25,14 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const theme = localStorage.getItem('theme');
-    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    // Only apply dark mode if user has explicitly selected it
+    if (theme === 'dark') {
       setIsDarkMode(true);
       document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      // Default to light mode regardless of system preference
+      setIsDarkMode(false);
+      document.documentElement.removeAttribute('data-theme');
     }
   }, []);
 
