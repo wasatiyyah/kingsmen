@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { 
@@ -12,7 +12,7 @@ import {
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 
-const ServicesPage: React.FC = () => {
+const ServicesContent: React.FC = () => {
   const [selectedService, setSelectedService] = useState(0);
   const searchParams = useSearchParams();
 
@@ -656,6 +656,14 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
     </div>
+  );
+};
+
+const ServicesPage: React.FC = () => {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading services...</div>}>
+      <ServicesContent />
+    </Suspense>
   );
 };
 
