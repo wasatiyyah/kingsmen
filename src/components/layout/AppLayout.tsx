@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CalendlyEmbed from '@/components/ui/CalendlyEmbed';
 import { CalendlyProvider, useCalendly } from '@/contexts/CalendlyContext';
+import { AnalyticsProvider } from '@/contexts/AnalyticsContext';
 
 function AppContent({ children }: { children: React.ReactNode }) {
   const { isCalendlyOpen, closeCalendly } = useCalendly();
@@ -23,10 +24,12 @@ function AppContent({ children }: { children: React.ReactNode }) {
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
-    <CalendlyProvider>
-      <AppContent>
-        {children}
-      </AppContent>
-    </CalendlyProvider>
+    <AnalyticsProvider>
+      <CalendlyProvider>
+        <AppContent>
+          {children}
+        </AppContent>
+      </CalendlyProvider>
+    </AnalyticsProvider>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import AppLayout from '@/components/layout/AppLayout'
+import AnalyticsScripts from '@/components/AnalyticsScripts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,6 +56,7 @@ export default function RootLayout({
         <AppLayout>
           {children}
         </AppLayout>
+        <AnalyticsScripts />
       </body>
     </html>
   )

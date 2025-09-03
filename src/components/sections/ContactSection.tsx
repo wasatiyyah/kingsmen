@@ -3,10 +3,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Clock, ArrowRight, CheckCircle } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { useAnalytics } from '@/contexts/AnalyticsContext';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 
 const ContactSection: React.FC = () => {
+  const router = useRouter();
+  const { trackFormSubmission, trackConversion } = useAnalytics();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,22 +47,25 @@ const ContactSection: React.FC = () => {
       });
 
       if (response.ok) {
-        setIsSubmitted(true);
+        // Track form submission
+        trackFormSubmission('contact_form', formData);
         
-        // Reset form after 3 seconds
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFormData({
-            name: '',
-            email: '',
-            company: '',
-            phone: '',
-            service: '',
-            message: '',
-            budget: '',
-            timeline: ''
-          });
-        }, 3000);
+        // Track conversion
+        const budgetValue = formData.budget ? 
+          formData.budget.replace(/[^0-9]/g, '') : '0';
+        const numericValue = parseInt(budgetValue) || 0;
+        
+        trackConversion('lead_generation', numericValue, 'USD');
+        
+        // Redirect to thank you page with conversion data
+        const params = new URLSearchParams({
+          source: 'contact_form',
+          type: 'lead_generation',
+          value: numericValue.toString(),
+          service: formData.service || 'general_inquiry'
+        });
+        
+        router.push(`/thank-you?${params.toString()}`);
       } else {
         throw new Error('Failed to send message');
       }
