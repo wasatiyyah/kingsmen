@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Kingsmen Consultancy',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Kingsmen Consultancy - Software Development & Cloud Architecture',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kingsmen Consultancy - World-Class Software Solutions',
     description: 'Transform your business with our expert software development and cloud architecture services.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.svg'],
   },
 }
 

@@ -1,42 +1,54 @@
-# Kingsmen Consultancy - World-Class Software Solutions Website
+# Kingsmen Consultancy Website
 
-A stunning, modern website for Kingsmen Consultancy showcasing world-class software development, cloud architecture, and digital transformation services.
+A world-class, modern website for Kingsmen Consultancy showcasing expertise in software development, cloud architecture, and digital transformation solutions.
 
 ## 🚀 Features
 
-### Design & User Experience
-- **Modern UI/UX Design** - Clean, professional design with stunning animations
-- **Responsive Design** - Fully responsive across all devices (mobile, tablet, desktop)
-- **Dark Mode Toggle** - Professional dark theme option
-- **Smooth Animations** - Framer Motion powered micro-interactions
-- **Accessibility Compliant** - WCAG 2.1 AA standards
-- **Performance Optimized** - Fast loading with optimized assets
+- **Modern Design**: Beautiful, responsive design with smooth animations
+- **Dark Mode**: Professional dark theme toggle
+- **Performance Optimized**: Fast loading with Next.js 15 and optimized assets
+- **SEO Ready**: Meta tags, structured data, and performance optimization
+- **Contact Forms**: Functional contact forms with email integration
+- **Case Studies**: Comprehensive portfolio showcase
+- **Responsive**: Mobile-first design that works on all devices
+- **Accessibility**: WCAG 2.1 AA compliant with keyboard navigation
 
-### Technical Features
-- **Next.js 14** - Latest React framework with App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Smooth animations and transitions
-- **Lucide React** - Beautiful icon library
-- **SEO Optimized** - Meta tags, structured data, and performance
+## 🛠️ Tech Stack
 
-### Content Sections
-- **Hero Section** - Compelling value proposition with interactive elements
-- **Services Section** - Comprehensive service offerings with detailed features
-- **Case Studies** - Portfolio showcase with filtering and interactive cards
-- **Contact Section** - Multiple contact methods with consultation booking form
-- **Footer** - Complete site navigation with newsletter signup
+- **Framework**: Next.js 15 with React 19
+- **Styling**: Tailwind CSS with custom design system
+- **Animations**: Framer Motion for smooth interactions
+- **Icons**: Lucide React and Heroicons
+- **Email**: Nodemailer for contact form functionality
+- **Deployment**: Optimized for Vercel/Netlify
 
-## 🛠️ Technology Stack
+## 📁 Project Structure
 
-- **Frontend Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Deployment**: Vercel/Netlify ready
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── about/             # About us page
+│   ├── case-studies/      # Portfolio showcase
+│   ├── services/          # Services overview
+│   ├── solutions/         # Industry solutions
+│   ├── resources/         # Blog and resources
+│   └── api/               # API routes
+├── components/            # Reusable components
+│   ├── layout/            # Header, Footer, Layout
+│   ├── sections/          # Page sections
+│   └── ui/                # UI components
+├── contexts/              # React contexts
+└── hooks/                 # Custom hooks
+```
 
-## 📦 Installation
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 1. **Clone the repository**
    ```bash
@@ -49,141 +61,131 @@ A stunning, modern website for Kingsmen Consultancy showcasing world-class softw
    npm install
    ```
 
-3. **Run the development server**
+3. **Set up environment variables**
+   ```bash
+   cp env.example .env.local
+   ```
+   
+   Edit `.env.local` with your configuration:
+   - `GMAIL_USER`: Your Gmail address
+   - `GMAIL_APP_PASSWORD`: Gmail app password
+   - `NEXT_PUBLIC_SITE_URL`: Your site URL
+
+4. **Run the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🏗️ Project Structure
+## 📧 Email Configuration
 
-```
-kingsmen-consultancy/
-├── src/
-│   ├── app/
-│   │   ├── globals.css          # Global styles and design system
-│   │   ├── layout.tsx           # Root layout with metadata
-│   │   └── page.tsx             # Main homepage
-│   ├── components/
-│   │   ├── ui/                  # Reusable UI components
-│   │   │   ├── Button.tsx       # Button component with variants
-│   │   │   └── Card.tsx         # Card component with animations
-│   │   ├── layout/              # Layout components
-│   │   │   ├── Header.tsx       # Navigation header with dark mode
-│   │   │   └── Footer.tsx       # Footer with links and newsletter
-│   │   └── sections/            # Page sections
-│   │       ├── HeroSection.tsx  # Hero section with animations
-│   │       ├── ServicesSection.tsx # Services showcase
-│   │       ├── CaseStudiesSection.tsx # Portfolio with filtering
-│   │       └── ContactSection.tsx # Contact form and methods
-│   └── types/                   # TypeScript type definitions
-├── public/                      # Static assets
-├── package.json                 # Dependencies and scripts
-└── README.md                    # Project documentation
-```
+The contact form uses Gmail SMTP. To set up:
 
-## 🎨 Design System
+1. Enable 2-factor authentication on your Gmail account
+2. Generate an app password
+3. Add to `.env.local`:
+   ```
+   GMAIL_USER=your-email@gmail.com
+   GMAIL_APP_PASSWORD=your-app-password
+   ```
 
-### Color Palette
-- **Primary Navy**: #1a365d (Trust and professionalism)
-- **Secondary Blue**: #3182ce (Innovation and technology)
-- **Accent Gold**: #d69e2e (Premium quality and excellence)
-- **Neutral Grays**: Clean whites and sophisticated grays
+## 🎨 Customization
+
+### Brand Colors
+
+The design system uses these primary colors:
+- **Navy Blue**: `#1a365d` (Primary)
+- **Electric Blue**: `#3182ce` (Secondary)  
+- **Gold**: `#d69e2e` (Accent)
 
 ### Typography
-- **Font Family**: Inter (Google Fonts)
-- **Headings**: Bold, expressive typography
-- **Body Text**: Clean, readable sans-serif
+
+- **Primary Font**: Inter (Google Fonts)
+- **Headings**: Bold weights (700-900)
+- **Body**: Regular weights (400-500)
 
 ### Components
-- **Buttons**: Multiple variants (primary, secondary, accent, outline)
-- **Cards**: Hover effects and animations
-- **Forms**: Accessible form controls with validation
-- **Navigation**: Sticky header with smooth scrolling
+
+All components are built with Tailwind CSS and can be customized in:
+- `tailwind.config.ts` - Theme configuration
+- `src/app/globals.css` - Custom styles and utilities
 
 ## 📱 Responsive Design
 
-The website is fully responsive with breakpoints:
+The website is built mobile-first with breakpoints:
 - **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
+- **Tablet**: 768px - 1024px  
 - **Desktop**: > 1024px
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
+
+1. Push to GitHub
+2. Connect repository to Vercel
 3. Deploy automatically
 
 ### Netlify
+
 1. Build the project: `npm run build`
-2. Deploy the `out` directory to Netlify
+2. Deploy the `out` directory
+3. Configure redirects for SPA routing
 
-### Manual Deployment
+### Environment Variables
+
+Remember to set environment variables in your deployment platform:
+- `GMAIL_USER`
+- `GMAIL_APP_PASSWORD`
+- `NEXT_PUBLIC_SITE_URL`
+
+## 🧪 Testing
+
 ```bash
+# Run tests
+npm test
+
+# Run Playwright tests
+npm run test:e2e
+
+# Build for production
 npm run build
-npm run start
-```
-
-## 🔧 Customization
-
-### Brand Colors
-Update colors in `src/app/globals.css`:
-```css
-:root {
-  --primary-navy: #1a365d;
-  --secondary-blue: #3182ce;
-  --accent-gold: #d69e2e;
-  /* ... */
-}
-```
-
-### Content Updates
-- **Services**: Edit `ServicesSection.tsx`
-- **Case Studies**: Update `CaseStudiesSection.tsx`
-- **Contact Info**: Modify `ContactSection.tsx`
-- **Company Info**: Update `Footer.tsx`
-
-### SEO Optimization
-Update metadata in `src/app/layout.tsx`:
-```typescript
-export const metadata: Metadata = {
-  title: 'Your Company Name',
-  description: 'Your description',
-  // ...
-}
 ```
 
 ## 📊 Performance
 
-### Lighthouse Scores (Target)
-- **Performance**: 90+
-- **Accessibility**: 95+
-- **Best Practices**: 95+
-- **SEO**: 95+
+The website is optimized for:
+- **Lighthouse Score**: 90+ across all metrics
+- **First Contentful Paint**: <1.5s
+- **Largest Contentful Paint**: <2.5s
+- **Cumulative Layout Shift**: <0.1
 
-### Optimization Features
-- **Image Optimization**: Next.js automatic image optimization
-- **Code Splitting**: Automatic route-based code splitting
-- **Minification**: Production build optimization
-- **Caching**: Static asset caching
+## 🔧 Development
 
-## 🔒 Security
+### Available Scripts
 
-- **HTTPS**: Secure connections
-- **Content Security Policy**: XSS protection
-- **Form Validation**: Client and server-side validation
-- **Input Sanitization**: Protection against malicious input
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run test:e2e` - Run Playwright tests
 
-## 📈 Analytics & Tracking
+### Code Style
 
-Ready for integration with:
-- Google Analytics 4
-- Hotjar
-- Google Tag Manager
-- Custom tracking solutions
+- TypeScript for type safety
+- ESLint for code quality
+- Prettier for formatting
+- Component-based architecture
+
+## 📈 Analytics & SEO
+
+The website includes:
+- Google Analytics 4 integration
+- Meta tags and Open Graph
+- Structured data markup
+- Sitemap generation
+- Performance monitoring
 
 ## 🤝 Contributing
 
@@ -195,34 +197,14 @@ Ready for integration with:
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is proprietary to Kingsmen Consultancy.
 
 ## 🆘 Support
 
 For support or questions:
-- Email: hello@kingsmenconsultancy.com
-- Phone: +1 (555) 123-4567
-- Website: https://kingsmenconsultancy.com
-
-## 🎯 Roadmap
-
-### Phase 2 Features
-- [ ] Blog/Resources section
-- [ ] Team member profiles
-- [ ] Interactive demos
-- [ ] AI chatbot integration
-- [ ] Multi-language support
-- [ ] Advanced analytics dashboard
-
-### Phase 3 Features
-- [ ] Client portal
-- [ ] Project management integration
-- [ ] Real-time collaboration tools
-- [ ] Advanced SEO features
-- [ ] Performance monitoring
+- Email: ibrahimhaleeth@gmail.com
+- Website: [kingsmenconsultancy.org](https://kingsmenconsultancy.org)
 
 ---
 
 **Built with ❤️ by Kingsmen Consultancy**
-
-Transform your business with world-class software solutions and cloud architecture expertise.
