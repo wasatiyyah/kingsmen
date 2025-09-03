@@ -39,44 +39,45 @@ const AboutPage: React.FC = () => {
     { year: '2024', event: 'Recognized as Top Software Development Company' }
   ];
 
-  const team = [
-    {
-      name: 'Michael Kingston',
-      role: 'CEO & Founder',
-      bio: 'Former Google engineer with 15+ years in enterprise software architecture',
-      image: '/team/ceo.svg'
-    },
-    {
-      name: 'Sarah Chen',
-      role: 'CTO',
-      bio: 'Cloud architecture expert, AWS certified solutions architect professional',
-      image: '/team/cto.svg'
-    },
-    {
-      name: 'David Martinez',
-      role: 'Head of Engineering',
-      bio: 'Full-stack development leader with expertise in scalable systems',
-      image: '/team/engineering.svg'
-    },
-    {
-      name: 'Emily Watson',
-      role: 'Head of Design',
-      bio: 'UX/UI visionary focused on human-centered design principles',
-      image: '/team/design.svg'
-    },
-    {
-      name: 'James Thompson',
-      role: 'Head of Cloud Services',
-      bio: 'Multi-cloud specialist with certifications in AWS, Azure, and GCP',
-      image: '/team/cloud.svg'
-    },
-    {
-      name: 'Priya Patel',
-      role: 'Head of AI/ML',
-      bio: 'Machine learning expert with a PhD in Computer Science from MIT',
-      image: '/team/ai.svg'
-    }
-  ];
+  // Team section temporarily removed - will add back later
+  // const team = [
+  //   {
+  //     name: 'Michael Kingston',
+  //     role: 'CEO & Founder',
+  //     bio: 'Former Google engineer with 15+ years in enterprise software architecture',
+  //     image: '/team/ceo.svg'
+  //   },
+  //   {
+  //     name: 'Sarah Chen',
+  //     role: 'CTO',
+  //     bio: 'Cloud architecture expert, AWS certified solutions architect professional',
+  //     image: '/team/cto.svg'
+  //   },
+  //   {
+  //     name: 'David Martinez',
+  //     role: 'Head of Engineering',
+  //     bio: 'Full-stack development leader with expertise in scalable systems',
+  //     image: '/team/engineering.svg'
+  //   },
+  //   {
+  //     name: 'Emily Watson',
+  //     role: 'Head of Design',
+  //     bio: 'UX/UI visionary focused on human-centered design principles',
+  //     image: '/team/design.svg'
+  //   },
+  //   {
+  //     name: 'James Thompson',
+  //     role: 'Head of Cloud Services',
+  //     bio: 'Multi-cloud specialist with certifications in AWS, Azure, and GCP',
+  //     image: '/team/cloud.svg'
+  //   },
+  //   {
+  //     name: 'Priya Patel',
+  //     role: 'Head of AI/ML',
+  //     bio: 'Machine learning expert with a PhD in Computer Science from MIT',
+  //     image: '/team/ai.svg'
+  //   }
+  // ];
 
   const stats = [
     { value: '120+', label: 'Projects Delivered' },
@@ -308,24 +309,24 @@ const AboutPage: React.FC = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className="p-6 text-center hover:shadow-xl transition-shadow">
-                  <div className="w-32 h-32 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="w-16 h-16 text-blue-600" />
-                  </div>
-                  <h4 className="heading-4 text-gray-900 mb-1">{member.name}</h4>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm">{member.bio}</p>
-                </Card>
-              </motion.div>
-            ))}
+            {/* {team.map((member, index) => ( */}
+            {/*   <motion.div */}
+            {/*     key={member.name} */}
+            {/*     initial={{ opacity: 0, y: 50 }} */}
+            {/*     whileInView={{ opacity: 1, y: 0 }} */}
+            {/*     transition={{ duration: 0.6, delay: index * 0.1 }} */}
+            {/*     viewport={{ once: true }} */}
+            {/*   > */}
+            {/*     <Card className="p-6 text-center hover:shadow-xl transition-shadow"> */}
+            {/*       <div className="w-32 h-32 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center"> */}
+            {/*         <Users className="w-16 h-16 text-blue-600" /> */}
+            {/*       </div> */}
+            {/*       <h4 className="heading-4 text-gray-900 mb-1">{member.name}</h4> */}
+            {/*       <p className="text-blue-600 font-medium mb-3">{member.role}</p> */}
+            {/*       <p className="text-gray-600 text-sm">{member.bio}</p> */}
+            {/*     </Card> */}
+            {/*   </motion.div> */}
+            {/* ))} */}
           </div>
         </div>
       </section>
