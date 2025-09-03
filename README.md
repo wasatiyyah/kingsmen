@@ -116,7 +116,7 @@ All components are built with Tailwind CSS and can be customized in:
 
 The website is built mobile-first with breakpoints:
 - **Mobile**: < 768px
-- **Tablet**: 768px - 1024px  
+- **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
 ## 🚀 Deployment

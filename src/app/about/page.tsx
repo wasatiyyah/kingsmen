@@ -44,37 +44,37 @@ const AboutPage: React.FC = () => {
       name: 'Michael Kingston',
       role: 'CEO & Founder',
       bio: 'Former Google engineer with 15+ years in enterprise software architecture',
-      image: '/team/ceo.jpg'
+      image: '/team/ceo.svg'
     },
     {
       name: 'Sarah Chen',
       role: 'CTO',
       bio: 'Cloud architecture expert, AWS certified solutions architect professional',
-      image: '/team/cto.jpg'
+      image: '/team/cto.svg'
     },
     {
       name: 'David Martinez',
       role: 'Head of Engineering',
       bio: 'Full-stack development leader with expertise in scalable systems',
-      image: '/team/engineering.jpg'
+      image: '/team/engineering.svg'
     },
     {
       name: 'Emily Watson',
       role: 'Head of Design',
       bio: 'UX/UI visionary focused on human-centered design principles',
-      image: '/team/design.jpg'
+      image: '/team/design.svg'
     },
     {
       name: 'James Thompson',
       role: 'Head of Cloud Services',
       bio: 'Multi-cloud specialist with certifications in AWS, Azure, and GCP',
-      image: '/team/cloud.jpg'
+      image: '/team/cloud.svg'
     },
     {
       name: 'Priya Patel',
       role: 'Head of AI/ML',
       bio: 'Machine learning expert with a PhD in Computer Science from MIT',
-      image: '/team/ai.jpg'
+      image: '/team/ai.svg'
     }
   ];
 
