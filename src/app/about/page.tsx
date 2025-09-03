@@ -290,46 +290,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="heading-2 text-gray-900 mb-6">
-              Meet Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Leadership</span>
-            </h2>
-            <p className="body-large text-gray-600 max-w-3xl mx-auto">
-              Visionary leaders with deep expertise driving innovation and excellence
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* {team.map((member, index) => ( */}
-            {/*   <motion.div */}
-            {/*     key={member.name} */}
-            {/*     initial={{ opacity: 0, y: 50 }} */}
-            {/*     whileInView={{ opacity: 1, y: 0 }} */}
-            {/*     transition={{ duration: 0.6, delay: index * 0.1 }} */}
-            {/*     viewport={{ once: true }} */}
-            {/*   > */}
-            {/*     <Card className="p-6 text-center hover:shadow-xl transition-shadow"> */}
-            {/*       <div className="w-32 h-32 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center"> */}
-            {/*         <Users className="w-16 h-16 text-blue-600" /> */}
-            {/*       </div> */}
-            {/*       <h4 className="heading-4 text-gray-900 mb-1">{member.name}</h4> */}
-            {/*       <p className="text-blue-600 font-medium mb-3">{member.role}</p> */}
-            {/*       <p className="text-gray-600 text-sm">{member.bio}</p> */}
-            {/*     </Card> */}
-            {/*   </motion.div> */}
-            {/* ))} */}
-          </div>
-        </div>
-      </section>
+      {/* Leadership Team section completely removed - will add back later */}
 
       {/* Why Choose Us */}
       <section className="section-padding bg-gradient-to-br from-blue-600 to-purple-600 text-white">
