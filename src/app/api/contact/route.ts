@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
 
     // Create a transporter using Gmail SMTP
     // Note: This requires environment variables for email credentials
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: process.env.GMAIL_USER,
@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: 'ibrahimhaleeth@gmail.com',
+      to: 'info@kingsmenconsultancy.org',
       subject: `New Contact Form Submission from ${name}`,
       text: emailContent,
       html: `
